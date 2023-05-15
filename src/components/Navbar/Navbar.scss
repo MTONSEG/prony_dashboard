@@ -1,0 +1,58 @@
+@import '../../styles/vars.scss';
+
+.navbar {
+	&__item,
+	&__item-icon path {
+		transition: all .2s;
+	}
+
+	&__item {
+		
+	}
+
+	&__item-icon {
+		width: 20px;
+		height: 20px;
+		path {
+			fill: #9E9E9E;
+		}
+		&.stroke {
+			path {
+				fill: white;
+				stroke: #9E9E9E;
+			}
+		}
+	}
+
+	&__item-icon.stroke path,
+	&__item-icon-setting path {
+		stroke: #9E9E9E;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 12px 24px;
+		gap: 20px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.07px;
+		color: $darkColor;
+		cursor: pointer;
+		&:hover {
+			background: #F2F2F5;
+		}
+		&:hover .navbar__item-icon path{
+			fill: #1565C0;
+		}
+		&:hover .navbar__item-icon.stroke path {
+			stroke: #1565C0;
+			fill: #F2F2F5;
+		}
+		&:hover .navbar__item-icon-setting path {
+			stroke: #1565C0;
+		}
+	}
+
+}
+

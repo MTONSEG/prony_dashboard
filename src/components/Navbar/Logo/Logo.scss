@@ -1,0 +1,12 @@
+.logo {
+	padding: 17px 24px;
+	margin: 0 0 24px;
+	&__icon {
+		height: 30px;
+		width: 138px;
+	}
+}
+
+.svg-logo:hover {
+	fill: #ffd700;
+}
