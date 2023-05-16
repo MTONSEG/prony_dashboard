@@ -1,0 +1,23 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	padding: 10px 37px;
+	&__link {
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.3px;
+		color: #9E9E9E;
+		&::after {
+			content: "/";
+			display: inline-block;
+			margin: 0 5px;
+		}
+		&:last-child {
+			pointer-events: none;
+			color: #272557;
+			&::after {
+				display: none;
+			}
+		}
+	}
+}

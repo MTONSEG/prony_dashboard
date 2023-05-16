@@ -31,27 +31,27 @@ const Navbar = ({ state }) => {
 			<Logo icon={state.logo} />
 
 			<div className="navbar__list">
-				<Link to="" className="navbar__item">
+				<Link to="/" className="navbar__item">
 					<DashboardIcon className="navbar__item-icon" />
 					<p className="navbar__item-text">Dashboard</p>
 				</Link>
-				<Link to="" className="navbar__item">
+				<Link to="/boards" className="navbar__item">
 					<BoardIcon className="navbar__item-icon stroke" />
 					<p className="navbar__item-text">Boards</p>
 				</Link>
-				<Link to="" className="navbar__item">
+				<Link to="/posts" className="navbar__item">
 					<PostsIcon className="navbar__item-icon stroke" />
 					<p className="navbar__item-text">Posts</p>
 				</Link>
-				<Link to="" className="navbar__item">
+				<Link to="/statuses" className="navbar__item">
 					<StatusesIcon className="navbar__item-icon stroke" />
 					<p className="navbar__item-text">Statuses</p>
 				</Link>
-				<Link to="" className="navbar__item">
+				<Link to="/users" className="navbar__item">
 					<UsersIcon className="navbar__item-icon" />
 					<p className="navbar__item-text">Users</p>
 				</Link>
-				<Link to="" className="navbar__item">
+				<Link to="/changelog" className="navbar__item">
 					<ChangelogIcon className="navbar__item-icon" />
 					<p className="navbar__item-text">Changelog</p>
 				</Link>
@@ -82,7 +82,7 @@ const Navbar = ({ state }) => {
 					</ul>
 
 				</div>
-				<Link to="" className="navbar__item">
+				<Link className="navbar__item">
 					<IntegrationsIcon className="navbar__item-icon stroke" />
 					<p className="navbar__item-text">Integrations</p>
 				</Link>
