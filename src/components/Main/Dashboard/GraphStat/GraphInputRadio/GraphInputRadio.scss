@@ -5,10 +5,10 @@
 }
 
 .radio-graph {
-	gap: 24px;
-	margin: 0 87px 0 0;
+	gap: 54px;
+	margin: 0 0 0 87px;
 	&__label {
-		gap: 8px;
+		gap: 11px;
 		cursor: pointer;
 	}
 	&__custom,
@@ -31,18 +31,24 @@
 			width: 100%;
 			height: 100%;
 			border: 4px solid #fff;
-			background: #272557;
 			border-radius: 100%;
 			opacity: 0;
 		}
 	}
 
 	&__text {
-		line-height: 21px;
+		line-height: 20px;
 		letter-spacing: 0.08px;
+		font-weight: 600;
 		color: #9E9E9E;
-		&.active {
-			color: #272557;
+		&.active.blue {
+			color: #1565C0;
+		}
+		&.active.green {
+			color: #43A047;
+		}
+		&.active.orange {
+			color: #FF9800;
 		}
 	}
 
@@ -53,9 +59,26 @@
 		opacity: 0;
 		&:checked + .radio-graph__custom {
 			background: #fff;
-			border-color: #272557;
 			&::after {
 				opacity: 1;
+			}
+		}
+		&:checked + .radio-graph__custom.blue {
+			border-color: #1565C0;
+			&::after {
+				background: #1565C0;
+			}
+		}
+		&:checked + .radio-graph__custom.green {
+			border-color: #43A047;
+			&::after {
+				background: #43A047;
+			}
+		}
+		&:checked + .radio-graph__custom.orange {
+			border-color: #FF9800;
+			&::after {
+				background: #FF9800;
 			}
 		}
 	}

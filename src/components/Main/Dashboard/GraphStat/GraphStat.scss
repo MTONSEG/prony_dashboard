@@ -4,6 +4,8 @@
 	border-radius: 10px;
 	&__header {
 		padding: 27px 25px 27px 36px;
+		display: flex;
+		align-content: center;
 	}
 	&__title {
 		font-weight: 600;

@@ -104,7 +104,7 @@ export const dashboardScreen = {
 		title: 'Statistic',
 		defValue: 'users',
 		usersText: 'Users',
-		votesText: 'Voters',
+		votersText: 'Voters',
 		postsText: 'Posts',
 		usersData: [
 			{

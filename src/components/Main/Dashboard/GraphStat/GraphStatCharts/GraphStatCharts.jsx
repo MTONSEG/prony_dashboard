@@ -9,9 +9,13 @@ import {
 	ResponsiveContainer
 } from "recharts";
 
-const GraphStatCharts = ({ state, selectedStatRadio }) => {
+const GraphStatCharts = ({ state, selectedStatRadio, ...props }) => {
 	return (
-		<div className="graph-stat__body">
+		<div className={
+			props.className
+				? `${props.className}`
+				: 'graph-stat__body'
+		}>
 			{
 				selectedStatRadio === 'users'
 					? <ResponsiveContainer>
