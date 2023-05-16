@@ -56,3 +56,47 @@
 
 }
 
+.settings-navbar {
+	overflow: hidden;
+	&__header {
+		position: relative;
+		&::after {
+			content: "";
+			background: url('../../assets/icons/arrow-tab.svg') center/cover no-repeat;
+			position: absolute;
+			top: calc(50% - 3.3px);
+			right: 28px;
+			width: 11.67px;
+			height: 6.67px;
+			transform: rotate(180deg);
+		}
+	}
+	
+	&__list {
+		margin: 0;
+		height: 0;
+		opacity: 0;
+	}
+	&__list,
+	&__header::after {
+		transition: all .2s;
+	}
+
+	&__link {
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.3px;
+		margin: 0 0 6px;
+		color: rgba(39, 37, 87, 0.5);
+		&:hover {
+			color: #272557;
+		}
+	}
+	&.active .settings-navbar__list {
+		margin: 6px 10px 7px 64px;
+		opacity: 1;
+	}
+	&.active .settings-navbar__header::after {
+		transform: rotate(0);
+	}
+}

@@ -1,53 +1,29 @@
 import logo from './assets/icons/logo.svg';
+import iconTabArrow from './assets/icons/arrow-tab.svg';
+import photoUserHeader from './assets/images/header_photo.jpg';
 
 const images = {
-	logo: logo
+	logo: logo,
+	iconTabArrow: iconTabArrow,
+	header: {
+		photoUserHeader: photoUserHeader
+	}
 }
 
 export const navbarStore = {
 	logo: images.logo,
-	list: [
-		{
-			title: 'Dashboard',
-			icon: ''
-		},
-		{
-			title: 'Boards',
-			icon: ''
-		},
-		{
-			title: 'Posts',
-			icon: ''
-		},
-		{
-			title: 'Statuses',
-			icon: ''
-		},
-		{
-			title: 'Users',
-			icon: ''
-		},
-		{
-			title: 'Changelog',
-			icon: ''
-		},
-	],
 	setting: {
 		title: 'Settings',
-		icon: '',
+		icon: images.iconTabArrow,
 		list: ['Settings 1', 'Settings 2', 'Settings 3']
 	},
-	Integrations: {
-		title: 'Integrations',
-		icon: ''
-	}
 }
 
 export const headerStore = {
 	theme: 'day',
 	user: {
-		photo: '',
-		name: '',
+		photo: images.header.photoUserHeader,
+		name: 'Lucy Lavender',
 		status: true
 	}
 }

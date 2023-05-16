@@ -9,7 +9,7 @@ const App = ({ store }) => {
 	return (
 		<div className="wrapper">
 			<Navbar state={state.navbarStore} />
-			<Main />
+			<Main state={state} />
 		</div>
 	)
 }
