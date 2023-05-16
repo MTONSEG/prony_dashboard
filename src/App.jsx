@@ -8,8 +8,12 @@ const App = ({ store }) => {
 
 	return (
 		<div className="wrapper">
-			<Navbar state={state.navbarStore} />
-			<Main state={state} />
+			<Navbar
+				state={state.navbarStore}
+			/>
+			<Main
+				state={state}
+			/>
 		</div>
 	)
 }

@@ -20,7 +20,12 @@ export const navbarStore = {
 }
 
 export const headerStore = {
-	theme: 'day',
+	theme: {
+		defaultTheme: 'day',
+		name: 'theme',
+		dayText: 'Day theme',
+		nightText: 'Night theme'
+	},
 	user: {
 		photo: images.header.photoUserHeader,
 		name: 'Lucy Lavender',

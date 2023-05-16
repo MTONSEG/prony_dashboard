@@ -1,0 +1,45 @@
+.user-header {
+	display: flex;
+	align-items: center;
+	&__image-wap {
+		overflow: hidden;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		margin: 0 20px 0 0;
+	}
+	&__image {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	&__name {
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0.07px;
+		color: #272557;
+		margin: 0 0 1px;
+	}
+	&__status {
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.3px;
+		color: #9E9E9E;
+		padding: 0 0 0 12px;
+		position: relative;
+		&::before {
+			content: "";
+			width: 8px;
+			height: 8px;
+			background: #43A047;
+			border-radius: 100%;
+			position: absolute;
+			top: calc(50% - 5px);
+			left: 0;
+		}
+		&.offline::before {
+			background: #e10a0a;
+		}
+	}
+}
