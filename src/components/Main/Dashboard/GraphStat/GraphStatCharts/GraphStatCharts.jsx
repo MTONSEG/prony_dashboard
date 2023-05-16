@@ -68,7 +68,7 @@ const GraphStatCharts = ({ state, selectedStatRadio, ...props }) => {
 									color: '#fff'
 								}}
 								contentStyle={{
-									background: '#2C629E',
+									background: '#43A047',
 									border: 0,
 									borderRadius: '5px',
 									color: '#fff'
@@ -101,7 +101,7 @@ const GraphStatCharts = ({ state, selectedStatRadio, ...props }) => {
 									color: '#fff'
 								}}
 								contentStyle={{
-									background: '#2C629E',
+									background: '#FF9800',
 									border: 0,
 									borderRadius: '5px',
 									color: '#fff'

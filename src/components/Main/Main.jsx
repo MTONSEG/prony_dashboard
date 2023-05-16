@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Header from '../Header/Header';
-import Loading from '../UI/Loading/Loading';
 import Breadcrumbs from '../UI/Breadcrumbs/Breadcrumbs';
 import './Main.scss';
 

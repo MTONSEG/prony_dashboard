@@ -1,9 +1,10 @@
+import { v1 } from 'uuid';
 import logo from './assets/icons/logo.svg';
 import iconTabArrow from './assets/icons/arrow-tab.svg';
 import photoUserHeader from './assets/images/header_photo.jpg';
 import photoDashActivity1 from './assets/images/dashboard_photo-1_activity.jpg';
 import photoDashActivity2 from './assets/images/dashboard_photo-2_activity.jpg';
-import { v1 } from 'uuid';
+import iconArrowGrey from './assets/icons/arrow-grey-down.svg';
 
 const images = {
 	logo: logo,
@@ -13,7 +14,8 @@ const images = {
 	},
 	dashboard: {
 		photoDashActivity1: photoDashActivity1,
-		photoDashActivity2: photoDashActivity2
+		photoDashActivity2: photoDashActivity2,
+		iconArrowGrey: iconArrowGrey,
 	}
 }
 
@@ -102,10 +104,29 @@ export const dashboardScreen = {
 	},
 	graph: {
 		title: 'Statistic',
-		defValue: 'users',
-		usersText: 'Users',
-		votersText: 'Voters',
-		postsText: 'Posts',
+		defaultRadio: 'users',
+		iconArrow: images.iconArrowGrey,
+		radios: [
+			{
+				name: 'stat',
+				text: 'Users',
+				value: 'users',
+				color: 'blue',
+			},
+			{
+				name: 'stat',
+				text: 'Voters',
+				value: 'voters',
+				color: 'green',
+			},
+			{
+				name: 'stat',
+				text: 'Posts',
+				value: 'posts',
+				color: 'orange',
+			},
+		],
+		days: ['last 90 days', 'last 60 days', 'last 30 days'],
 		usersData: [
 			{
 				name: "Jan",
