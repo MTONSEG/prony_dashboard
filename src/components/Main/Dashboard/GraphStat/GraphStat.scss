@@ -1,22 +1,18 @@
-.item-stat {
-	background: #fff;
+.graph-stat {
+	background: #FFFFFF;
 	box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
 	border-radius: 10px;
-	padding: 20px 22px 18px;
-	&__title {
-		font-size: 16px;
-		line-height: 21px;
-		letter-spacing: 0.09px;
-		color: #272557;
-		margin: 0 0 8px;
+	&__header {
+		padding: 27px 25px 27px 36px;
 	}
-	&__value {
+	&__title {
 		font-weight: 600;
-		font-size: 36px;
-		line-height: 38px;
-		text-align: right;
-		letter-spacing: -0.22px;
-		text-transform: uppercase;
-		color: #1565C0;
+		font-size: 24px;
+		line-height: 29px;
+		color: #272557;
+	}
+	&__body {
+		height: 484px;
+		padding: 0 30px 30px 10px;
 	}
 }

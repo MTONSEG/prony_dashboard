@@ -1,0 +1,13 @@
+.loading {
+	height: 484px;
+	padding: 0 30px 30px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__content {
+		text-align: center;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 38px;
+	}
+}

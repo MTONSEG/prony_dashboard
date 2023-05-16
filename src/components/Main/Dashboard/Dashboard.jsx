@@ -4,6 +4,7 @@ import { dashboardScreen } from '../../../store';
 import './Dashboard.scss';
 import ItemStat from './ItemStat/ItemStat';
 import ActivitiesStat from './ActivitiesStat/ActivitiesStat';
+import GraphStat from './GraphStat/GraphStat';
 
 const Dashboard = ({ state }) => {
 
@@ -23,7 +24,8 @@ const Dashboard = ({ state }) => {
 					<ul className="dashboard__stat-list">
 						{statItems}
 					</ul>
-					
+					<GraphStat
+						state={dashboardScreen.graph} />
 				</div>
 				<ActivitiesStat
 					state={dashboardScreen.activities}

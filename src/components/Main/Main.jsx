@@ -12,11 +12,9 @@ const Main = ({ state }) => {
 		<div className="main">
 			<Header state={state.headerStore} />
 			<Breadcrumbs/>
-			<Suspense fallback={<Loading />}>
 				<Routes>
 					<Route path="/" element={<Dashboard/>} />
 				</Routes>
-			</Suspense>
 		</div>
 	)
 }

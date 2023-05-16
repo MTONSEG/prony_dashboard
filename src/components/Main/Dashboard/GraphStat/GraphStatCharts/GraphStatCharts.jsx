@@ -1,44 +1,19 @@
-import React, { useState, Suspense } from 'react';
-import Loading from '../../../UI/Loading/Loading';
+import React from "react";
+import {
+	AreaChart,
+	Area,
+	XAxis,
+	YAxis,
+	CartesianGrid,
+	Tooltip,
+	ResponsiveContainer
+} from "recharts";
 
-import GraphInputRadio from './GraphInputRadio/GraphInputRadio';
-import './GraphStat.scss';
-// import GraphStatCharts from './GraphStatCharts/GraphStatCharts';
-const GraphStatCharts = React.lazy(() => import('./GraphStatCharts/GraphStatCharts'));
-
-const GraphStat = ({ state, ...props }) => {
-	let [selectedStatRadio, setSelectedStatRadio] = useState('users');
-
+const GraphStatCharts = ({ state, selectedStatRadio }) => {
 	return (
-		<div className='graph-stat'>
-			<div className="graph-stat__header">
-				<h1 className="graph-stat__title">{state.title}</h1>
-				<div className="graph-stat__radios">
-					<GraphInputRadio
-						text={'Users'}
-						name={'stat'}
-						value='users'
-						checked={selectedStatRadio}
-						setChecked={setSelectedStatRadio}
-					/>
-					<GraphInputRadio
-						text={'Users'}
-						name={'stat'}
-						value='voters'
-						checked={selectedStatRadio}
-						setChecked={setSelectedStatRadio}
-					/>
-					<GraphInputRadio
-						text={'Users'}
-						name={'stat'}
-						value='posts'
-						checked={selectedStatRadio}
-						setChecked={setSelectedStatRadio}
-					/>
-				</div>
-			</div>
-			{/* <div className="graph-stat__body">
-				{selectedStatRadio === 'users'
+		<div className="graph-stat__body">
+			{
+				selectedStatRadio === 'users'
 					? <ResponsiveContainer>
 						<AreaChart data={state.usersData}>
 							<defs>
@@ -69,9 +44,10 @@ const GraphStat = ({ state, ...props }) => {
 						</AreaChart>
 					</ResponsiveContainer>
 					: <></>
-				}
+			}
 
-				{selectedStatRadio === 'voters'
+			{
+				selectedStatRadio === 'voters'
 					? <ResponsiveContainer>
 						<AreaChart data={state.votersData}>
 							<defs>
@@ -102,8 +78,9 @@ const GraphStat = ({ state, ...props }) => {
 						</AreaChart>
 					</ResponsiveContainer>
 					: <></>
-				}
-				{selectedStatRadio === 'posts'
+			}
+			{
+				selectedStatRadio === 'posts'
 					? <ResponsiveContainer>
 						<AreaChart data={state.postsData}>
 							<defs>
@@ -134,20 +111,9 @@ const GraphStat = ({ state, ...props }) => {
 						</AreaChart>
 					</ResponsiveContainer>
 					: <></>
-				}
-
-
-
-			</div> */}
-			<Suspense fallback={<Loading/>}>
-				<GraphStatCharts
-					state={state}
-					selectedStatRadio={selectedStatRadio}
-					setSelectedStatRadio={setSelectedStatRadio}
-				/>
-			</Suspense>
+			}
 		</div>
 	)
 }
 
-export default GraphStat;
+export default GraphStatCharts;
