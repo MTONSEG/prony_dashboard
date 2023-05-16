@@ -1,0 +1,19 @@
+.activities-stat {
+	&__title {
+		padding: 27px 36px 33px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		color: #272557;
+	}
+	&__more-btn {
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0.07px;
+		text-decoration: underline;
+		color: #1565C0;
+		display: block;
+		padding: 20px 20px 18px;
+		text-align: center;
+	}
+}

@@ -24,3 +24,9 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+@mixin obj-fi-cover {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}

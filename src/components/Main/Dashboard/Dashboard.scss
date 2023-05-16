@@ -1,0 +1,26 @@
+.dashboard {
+	&__body {
+		display: flex;
+		gap: 20px;
+	}
+	&__stat, 
+	&__activities {
+		width: 100%;
+	}
+
+	&__activities {
+		background: #FFF;
+		box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+		border-radius: 10px;
+	}
+	&__stat-list {
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		gap: 20px;
+		margin: 0 0 20px;
+	}
+	&__activities {
+		max-width: 553px;
+	}
+
+}

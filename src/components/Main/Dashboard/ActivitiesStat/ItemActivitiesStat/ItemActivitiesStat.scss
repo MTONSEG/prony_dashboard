@@ -1,0 +1,54 @@
+.item-activities-stat {
+	background: #fff;
+	padding: 24px 27px 18px;
+	display: flex;
+	gap: 27px;
+	position: relative;
+	&:nth-child(2n) {
+		background: #F8F8F8;
+	}
+	&__image-wrap {
+		overflow: hidden;
+		border-radius: 100%;
+		height: 45px;
+		flex: 0 0 45px;
+	}
+	&__image {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	&__name {
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+	}
+	&__active {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #1565C0;
+		margin: 0 0 6px;
+	}
+	&__title {
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0.07px;
+		color: #272557;
+		margin: 0 0 9px;
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 17px;
+		letter-spacing: 0.6px;
+		color: #272557;
+	}
+	&__date {
+		position: absolute;
+		top: 26px;
+		right: 29px;
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+
+	}
+}
