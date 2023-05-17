@@ -1,0 +1,38 @@
+.message-board {
+	background: #43A047;
+	border-radius: 10px;
+	box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+	padding: 17px 72px;
+	position: relative;
+	margin: 0 0 35px;
+	&__text {
+		font-weight: 400;
+		line-height: 20px;
+		letter-spacing: 0.1px;
+		color: #FFF;
+	}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		&_done,
+		&_error {
+			left: 30px;
+		}
+		&_close {
+			right: 20px;
+		}
+		&_error {
+			display: none;
+		}
+	}
+	&.error {
+		background: #FFACAC;
+		&__icon_done {
+			display: none;
+		}
+		&__icon {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,152 @@
+.table-boards {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+	border-radius: 10px;
+	padding: 0 0 22px;
+	overflow: hidden;
+	&__header {
+		padding: 22px 30px 22px 69px;
+		display: flex;
+		align-items: center;
+	}
+	&__title {
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #272557;
+		&:first-child {
+			width: 60%;
+		}
+		&:last-child {
+			width: 40%;
+		}
+	}
+	&__right,
+	&__item,
+	&__button-list,
+	&__btn {
+		display: flex;
+		align-items: center;
+	}
+	ul {
+		&::-webkit-scrollbar {
+			width: 2px;
+		}
+		&::-webkit-scrollbar-track {
+			background:transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #1565C0;
+		}
+	}
+	&__item {
+		position: relative;
+		padding: 27px 20px 27px 69px;
+		background: #F8F8F8;
+		user-select: none; 
+		&:nth-child(2n) {
+			background: #fff;
+		}
+		&.drag {
+			background:#1565C0;
+		}
+	}
+	&__right {
+		justify-content: space-between;
+		width: 40%;
+	}
+	&__drag-icon {
+		position: absolute;
+		left: 22px;
+		top: calc(50% - 7.5px);
+		cursor: grab;
+	}
+	&__text {
+		width: 60%;
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		padding: 0 40px 0 0;
+	}
+	&__amount {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+	}
+	&__button-list {
+		gap: 5px;
+	}
+	&__btn,
+	&__btn-option {
+		cursor: pointer;
+		transition: all .2s;
+	}
+	&__btn {
+		fill: #E0E0E0;
+		padding: 5px 8px;
+		&:hover {
+			fill: #a1a1a1;
+		}
+		&.active {
+			fill: #1565C0;
+		}
+	}
+	&__btn-option {
+		fill: #272557;
+		padding: 5px 8px 1px;
+		margin: 0 0 0 10px;
+		&:hover {
+			fill: #1565C0;
+		}
+	}
+}
+
+
+.popup-boards {
+	position: absolute;
+	top: 27px;
+	right: 10px;
+	width: 250px;
+	z-index: 5;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(53, 64, 82, 0.1);
+	border-radius: 4px;
+	padding: 53px 0 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .2s;
+	transform: translateY(-30px) scale(0);
+	&__close-btn {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		cursor: pointer;
+	}
+	&.active {
+		opacity: 1;
+		pointer-events: all;
+		transform: translateX(0) scale(1);
+	}
+	&__item {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #272557;
+		padding: 12px 10px 11px 64px;
+		position: relative;
+		svg {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 17px;
+			width: 20px;
+			fill: #E0E0E0;
+			transition: all .2s;
+		}
+		&:hover {
+			background: rgba(0, 0, 0, 0.05);
+		}
+		&:hover svg {
+			fill: #272557;
+		}
+	}
+}

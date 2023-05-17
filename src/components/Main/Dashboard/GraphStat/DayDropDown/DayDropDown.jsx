@@ -6,8 +6,6 @@ const DayDropDown = ({ state, ...props }) => {
 	let [isActive, setActive] = useState(false);
 	let [currentValue, setCurrentValue] = useState(state[0]);
 
-	console.log(state)
-
 	let currentEl = useRef(null);
 
 	const handleActiveOnClick = (e) => {

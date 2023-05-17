@@ -5,6 +5,7 @@ import photoUserHeader from './assets/images/header_photo.jpg';
 import photoDashActivity1 from './assets/images/dashboard_photo-1_activity.jpg';
 import photoDashActivity2 from './assets/images/dashboard_photo-2_activity.jpg';
 import iconArrowGrey from './assets/icons/arrow-grey-down.svg';
+import iconDragAndDrop from './assets/icons/grag-drop-icon.svg';
 
 const images = {
 	logo: logo,
@@ -16,6 +17,9 @@ const images = {
 		photoDashActivity1: photoDashActivity1,
 		photoDashActivity2: photoDashActivity2,
 		iconArrowGrey: iconArrowGrey,
+	},
+	boards: {
+		iconDragAndDrop: iconDragAndDrop,
 	}
 }
 
@@ -265,6 +269,83 @@ export const dashboardScreen = {
 				posts: 8790,
 			},
 		],
+	}
+}
+// '<Reorder.Group values={boardsList} onReorder={setBoardsList} as='ul'>
+// {boardsList.map(el => (
+// 	<ItemTableBoards
+// 		key={el.id}
+// 		icon={state.iconDrag}
+// 		title={el.title}
+// 		amountPosts={el.amountPosts}
+// 		value={el}
+// 	/>
+// ))}
+// </Reorder.Group>'
+export const boardScreen = {
+	title: 'Boards',
+	titleBtn: 'Create Board',
+	table: {
+		nameTitle: 'Name',
+		postTitle: 'Posts',
+		iconDrag: images.boards.iconDragAndDrop,
+		doneMess: 'This is a success message!',
+		errorMess: 'You can’t do that mate.',
+		list: [
+			{
+				id: 1,
+				title: 'Send status updates back through Intercom',
+				amountPosts: 12,
+			},
+			{
+				id: 2,
+				title: 'Irure velit veniam nulla consectetur minim.',
+				amountPosts: 22,
+			},
+			{
+				id: 3,
+				title: 'Eu dolore sit ut non id id aute. ',
+				amountPosts: 132,
+			},
+			{
+				id: 4,
+				title: 'Veniam nostrud proident cupidatat laborum aliquip cupidatat aute consectetur officia. ',
+				amountPosts: 322,
+			},
+			{
+				id: 5,
+				title: 'Nostrud in elit voluptate enim ipsum. Voluptate deserunt ipsum id labore dolor sit amet irure Lorem aliqua.',
+				amountPosts: 52,
+			},
+			{
+				id: 6,
+				title: 'Send status updates back through Intercom',
+				amountPosts: 132,
+			},
+			{
+				id: 7,
+				title: 'Irure velit veniam nulla consectetur minim.',
+				amountPosts: 222,
+			},
+			{
+				id: 8,
+				title: 'Eu dolore sit ut non id id aute. ',
+				amountPosts: 13,
+			},
+			{
+				id: 9,
+				title: 'Aute anim nostrud exercitation proident veniam nostrud proident cupidatat laborum aliquip cupidatat aute consectetur officia. ',
+				amountPosts: 322,
+			},
+			{
+				id: 10,
+				title: 'Voluptate deserunt ipsum id labore dolor sit amet irure Lorem aliqua.',
+				amountPosts: 523,
+			},
+		],
+		options: {
+			
+		}
 	}
 }
 
