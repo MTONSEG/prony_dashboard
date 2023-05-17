@@ -1,14 +1,13 @@
 .graph-select {
 	position: relative;
-	background: #FFFFFF;
-	border: 1px solid #D7D7D7;
-	border-radius: 2px;
-	font-weight: 500;
 	font-size: 16px;
-	line-height: 159%;
+	line-height: 21px;
+	letter-spacing: 0.09px;
 	overflow: hidden;
 	cursor: pointer;
-	transform: all .2s;
+	transition: all .2s;
+	margin: 0 0 0 auto;
+	color:#9E9E9E;
 	&__header,
 	&__body {
 		background: #fff;
@@ -16,7 +15,7 @@
 
 	&__header {
 		position: relative;
-		padding: 12px 45px 8px 20px;;
+		padding: 12px 30px 8px;
 		z-index: 5;
 	
 	}
@@ -32,34 +31,33 @@
 	}
 
 	&__body {
-		top: 0;
-		left: -1px;
-		width: calc(100% + 2px);
+		top: 20;
+		left: 0;
+		width: 100%;
 		border: 1px solid #D7D7D7;
-		border-top: 0;
 		border-radius: 2px;
-		padding: 10px 0;
 		z-index: 1;
+		text-align: center;
 	}
 	&__item {
-		padding: 2.5px 20px;
+		padding: 5px 20px;
 		&:hover {
 			text-shadow: 0 0 3px #d8d6f1;
 			background: rgba(232, 231, 243, 0.5);
 		}
 	}
 	&__icon {
-		top: 10px;
-		right: 15px;
+		top: 20px;
+		right: 0;
 	}
 	&.active {
 		overflow: visible;
-		& .select__body {
-			top: calc(100% - 5px);
+		& .graph-select__body {
+			top:100%;
 			opacity: 1;
 			pointer-events: all;
 		}
-		& .select__icon {
+		& .graph-select__icon {
 			transform: rotate(180deg);
 		}
 	}

@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './DayDropDown.scss';
+import iconArrow from '../../../../../assets/icons/arrow-grey-down.svg';
 
 const DayDropDown = ({ state, ...props }) => {
 	let [isActive, setActive] = useState(false);
 	let [currentValue, setCurrentValue] = useState(state[0]);
+
+	console.log(state)
 
 	let currentEl = useRef(null);
 
@@ -56,7 +59,7 @@ const DayDropDown = ({ state, ...props }) => {
 				<p
 					className="graph-select__title"
 				>
-					{/* <img src={props.icon} alt="icon" className="graph-select__icon" /> */}
+					<img src={iconArrow} alt="icon" className="graph-select__icon" />
 					{currentValue}
 
 				</p>
