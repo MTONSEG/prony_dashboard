@@ -347,6 +347,74 @@ export const boardScreen = {
 		description: {
 			title: 'Description'
 		}
+	},
+	edit: {
+		title: 'EditBoard',
+		submit: 'Submit',
+		cancel: 'Cancel',
+		name: {
+			title: 'Board name',
+			value: 'Board Name'
+		},
+		url: {
+			title: 'URL',
+			value: 'http://www.prony.io?/board/12312/test123'
+		},
+		description: {
+			title: 'Description',
+			value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+		},
+		privacy: {
+			title: 'Privacy',
+			list: [
+				{
+					title: 'Public',
+					text: 'The board is visible to anyone. Search engines like Google will index it.',
+					value: 'public'
+				},
+				{
+					title: 'Private',
+					text: 'Only people added to the board can access it',
+					value: 'private'
+				}
+			],
+		},
+		status: {
+			title: 'Status',
+			list: [
+				{
+					title: 'Locked',
+					text: 'Only Board Moderators can create new posts',
+					value: 'locked'
+				},
+				{
+					title: 'Unlocked',
+					text: 'Anybody can post',
+					value: 'unlocked'
+				},
+			],
+		},
+		roadmap: {
+			title: 'Board on roadmap',
+			text: 'By default, your board is visible on your roadmap. Turn it off if you don’t want your board and its posts to be shown there.',
+			value: false
+		},
+		indexed: {
+			title: 'Indexed',
+			text: '',
+			value: true
+		},
+		preApproval: {
+			title: 'Post require pre approval',
+			text: 'All new posts should be approved by moderators before going public',
+			value: false
+		},
+		anonymous: {
+			title: 'Anonymous voting',
+			text: 'Allow anonymous votes',
+			value: true
+		},
+
 	}
 }
 

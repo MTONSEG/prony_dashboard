@@ -1,0 +1,21 @@
+.right-edit-from {
+	&__title {
+		color: #9E9E9E;
+		line-height: 21px;
+		letter-spacing: 0.08px;
+	}
+	&__header,
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&__header {
+		gap: 42px;
+		margin:0 0 9px;
+	}
+	&__body {
+		grid-template-rows: repeat(2, 1fr);
+		gap: 10px 42px;
+		grid-auto-flow: column;
+	}
+}

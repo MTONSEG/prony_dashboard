@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BigTitle from '../../../UI/BigTitle/BigTitle';
 import Button from '../../../UI/Buttons/Button/Button';
+import ButtonsContainer from '../../../UI/Buttons/ButtonsContainer/ButtonsContainer';
 import FormContainer from '../../../UI/Forms/FormContainer/FormContainer';
 import InputFrom from '../../../UI/Forms/InputFrom/InputFrom';
 import TextareaForm from '../../../UI/Forms/TextareaForm/TextareaForm';
@@ -37,10 +38,10 @@ const CreateBoard = ({ boardsState }) => {
 					setValue={setInputDescriptionValue}
 				/>
 
-				<div className="create-boards__buttons">
+				<ButtonsContainer>
 					<Button link='/boards' color='grey'>{createBoardState.cancel}</Button>
 					<Button link='../success' >{createBoardState.submit}</Button>
-				</div>
+				</ButtonsContainer>
 			</FormContainer>
 
 

@@ -23,7 +23,7 @@ const OptionBoardPopup = ({ state, active, setActive }) => {
 					<ViewIcon />
 					<span>PubLinkc view</span>
 				</Link>
-				<Link
+				<Link to='/boards/edit-board'
 					className="popup-boards__item"
 					onClick={onClickHandler}>
 					<EditSettingIcon />
@@ -33,15 +33,15 @@ const OptionBoardPopup = ({ state, active, setActive }) => {
 					className="popup-boards__item"
 					onClick={onClickHandler}>
 					<ListBoardIcon />
-					<span>Linkst board tags</span>
+					<span>Links board tags</span>
 				</Link>
-				<Link
+				<Link to='/boards/edit-board-post'
 					className="popup-boards__item"
 					onClick={onClickHandler}>
 					<EditPostIcon />
 					<span>Edit board post</span>
 				</Link>
-				<Link
+				<Link to='/boards/delete-board'
 					className="popup-boards__item"
 					onClick={onClickHandler}>
 					<RemoveBoardPostIcon />

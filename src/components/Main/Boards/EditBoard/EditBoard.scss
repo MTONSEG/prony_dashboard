@@ -1,0 +1,15 @@
+.edit-boards {
+	&__body {
+		display: flex;
+		gap: 75px;
+	}
+	&__form-left,
+	&__form-right {
+		flex: 1 1 100%;
+	}
+	&__title {
+		margin: 0 0 16px;
+		font-weight: 400;
+	}	
+	
+}
