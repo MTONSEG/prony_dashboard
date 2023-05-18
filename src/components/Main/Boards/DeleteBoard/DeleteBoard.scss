@@ -1,0 +1,18 @@
+.delete-boards {
+	&__form {
+		max-width: 800px;
+	}
+	&__title {
+		margin: 0 0 16px;
+	}
+	&__input {
+		margin: 0 0 38px;
+	}
+	&__text {
+		margin: 0 0 20px;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #272557;
+	}
+}

@@ -418,6 +418,13 @@ export const boardScreen = {
 				checked: true
 			},
 		],
+	},
+	delete: {
+		title: 'Delete board',
+		inputTitle: 'Board name',
+		delete: 'Delete',
+		cancel: 'Cancel',
+		text: 'This action will permanently delete the board and its content and cannot be undone. Please enter the board name to confirm.',
 	}
 }
 
