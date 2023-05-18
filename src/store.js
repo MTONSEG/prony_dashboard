@@ -271,17 +271,6 @@ export const dashboardScreen = {
 		],
 	}
 }
-// '<Reorder.Group values={boardsList} onReorder={setBoardsList} as='ul'>
-// {boardsList.map(el => (
-// 	<ItemTableBoards
-// 		key={el.id}
-// 		icon={state.iconDrag}
-// 		title={el.title}
-// 		amountPosts={el.amountPosts}
-// 		value={el}
-// 	/>
-// ))}
-// </Reorder.Group>'
 export const boardScreen = {
 	title: 'Boards',
 	titleBtn: 'Create Board',
@@ -343,8 +332,20 @@ export const boardScreen = {
 				amountPosts: 523,
 			},
 		],
-		options: {
-			
+	},
+	create: {
+		title:'Create Board',
+		submit: 'Submit',
+		cancel: 'Cancel',
+		name: {
+			title: 'Board name'
+		},
+		url: {
+			title: 'URL',
+			defaultValue: 'http://'
+		},
+		description: {
+			title: 'Description'
 		}
 	}
 }

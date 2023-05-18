@@ -3,6 +3,9 @@
 		display: flex;
 		gap: 20px;
 	}
+	&__title {
+		margin: 0 0 16px;
+	}
 	&__stat, 
 	&__activities {
 		width: 100%;
