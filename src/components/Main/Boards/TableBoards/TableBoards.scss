@@ -29,6 +29,7 @@
 		align-items: center;
 	}
 	ul {
+		height: calc(100vh - 300px);
 		&::-webkit-scrollbar {
 			width: 2px;
 		}

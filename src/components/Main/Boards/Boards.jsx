@@ -10,7 +10,7 @@ const Boards = ({ state }) => {
 
 	return (
 		<Routes>
-			<Route path='' element={
+			<Route path='/*' element={
 				<BoardsList boardsState={boardsState} />
 			} />
 			<Route path='create-board' element={

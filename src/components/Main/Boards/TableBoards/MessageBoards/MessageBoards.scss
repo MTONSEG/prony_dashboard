@@ -21,6 +21,7 @@
 		}
 		&_close {
 			right: 20px;
+			cursor: pointer;
 		}
 		&_error {
 			display: none;
@@ -34,5 +35,8 @@
 		&__icon {
 			display: block;
 		}
+	}
+	& + .table-boards ul {
+		height: calc(100vh - 360px);
 	}
 }

@@ -9,11 +9,16 @@
 	transition: all .2s;
 }
 
-.input-title {
+.input-title,
+.input-error-mess {
 	line-height: 21px;
 	letter-spacing: 0.08px;
 	color: #9E9E9E;
 	margin: 0 0 5px;
+}
+
+.input-error-mess {
+	color: #EB5757;
 }
 
 .input,
@@ -28,6 +33,12 @@
 	background: #fff;
 	outline: 4px solid transparent;
 }
+
+.input.error,
+.textarea.error {
+	border-color: #EB5757;
+}
+
 .input:focus,
 .textarea:focus {
 	border-color: #1565C0;
@@ -45,3 +56,4 @@
 .textarea {
 	resize: none;
 }
+

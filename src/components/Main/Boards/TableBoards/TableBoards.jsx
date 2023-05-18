@@ -21,8 +21,7 @@ const TableBoards = ({ state, ...props }) => {
 				onReorder={setBoardsList}
 				values={boardsList}
 				style={{
-					overflow: 'auto',
-					height: 'calc(100vh - 300px)'
+					overflow: 'auto'
 				}}
 			>
 				{boardsList.map((item) => (

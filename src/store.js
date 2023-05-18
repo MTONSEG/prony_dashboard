@@ -334,7 +334,7 @@ export const boardScreen = {
 		],
 	},
 	create: {
-		title:'Create Board',
+		title: 'Create Board',
 		submit: 'Submit',
 		cancel: 'Cancel',
 		name: {

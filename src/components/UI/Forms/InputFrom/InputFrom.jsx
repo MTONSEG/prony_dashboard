@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import '../Forms.scss';
 
 
-const InputFrom = ({ title, name, className, errorMess,type, value, setValue }) => {
+const InputFrom = ({ title, name, className, errorMess,type, value, setValue, error }) => {
 
 	return (
 		<div className={`${className && className} input-wrap`}>
@@ -10,7 +10,7 @@ const InputFrom = ({ title, name, className, errorMess,type, value, setValue }) 
 			<input
 				name={name ? name : ''}
 				type={type ? type : 'text'}
-				className="input"
+				className={`input ${error && 'error'}`}
 				value={value}
 				onChange={e => setValue(e.currentTarget.value)}
 			/>
