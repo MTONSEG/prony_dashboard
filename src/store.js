@@ -394,27 +394,30 @@ export const boardScreen = {
 				},
 			],
 		},
-		roadmap: {
-			title: 'Board on roadmap',
-			text: 'By default, your board is visible on your roadmap. Turn it off if you don’t want your board and its posts to be shown there.',
-			value: false
-		},
-		indexed: {
-			title: 'Indexed',
-			text: '',
-			value: true
-		},
-		preApproval: {
-			title: 'Post require pre approval',
-			text: 'All new posts should be approved by moderators before going public',
-			value: false
-		},
-		anonymous: {
-			title: 'Anonymous voting',
-			text: 'Allow anonymous votes',
-			value: true
-		},
-
+		slideCheckboxes: [
+			{
+				title: 'Board on roadmap',
+				text: 'By default, your board is visible on your roadmap. Turn it off if you don’t want your board and its posts to be shown there.',
+				checked: false
+			},
+			{
+				title: 'Indexed',
+				text: 'By default, your board will be indexed by search engines like Google. Turn it off if you don’t want that',
+				checked: true
+			},
+		],
+		checkboxList: [
+			{
+				title: 'Post require pre approval',
+				text: 'All new posts should be approved by moderators before going public',
+				checked: false
+			},
+			{
+				title: 'Anonymous voting',
+				text: 'Allow anonymous votes',
+				checked: true
+			},
+		],
 	}
 }
 

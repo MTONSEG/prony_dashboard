@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import CheckboxForm from '../../../../UI/Forms/CheckboxForm/CheckboxForm';
+import CheckboxSlideForm from '../../../../UI/Forms/CheckboxSlideFrom/CheckboxSlideForm';
 import RadioForm from '../../../../UI/Forms/RadioForm/RadioForm';
 import './RightEditForm.scss';
 
-const RightEditForm = ({ state, className }) => {
+const RightEditForm = ({ state, setState, className }) => {
 	let [checkPrivacy, setCheckPrivacy] = useState('private');
 	let [checkStatus, setCheckStatus] = useState('unlocked');
 
@@ -30,6 +32,26 @@ const RightEditForm = ({ state, className }) => {
 		/>
 	))
 
+	let checkboxList = state.checkboxList.map((el, i) => (
+		<CheckboxForm
+			key={i}
+			name={el.title}
+			title={el.title}
+			text={el.text}
+			checked={el.checked}
+		/>
+	))
+
+	let slideCheckboxes = state.slideCheckboxes.map((el, i) => (
+		<CheckboxSlideForm
+			key={i}
+			name={el.title}
+			title={el.title}
+			text={el.text}
+			checked={el.checked}
+		/>
+	))
+
 	return (
 		<div className={className
 			? `${className} right-edit-from`
@@ -50,8 +72,10 @@ const RightEditForm = ({ state, className }) => {
 				</div>
 			</div>
 			<div className="right-edit-from__bottom">
-				<div className="right-edit-from__left"></div>
-				<div className="right-edit-from__right"></div>
+				<div className="right-edit-from__body">
+					{slideCheckboxes}
+					{checkboxList}
+				</div>
 			</div>
 		</div>
 	)

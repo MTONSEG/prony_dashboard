@@ -21,7 +21,8 @@ const EditBoard = ({ boardsState }) => {
 						state={editBoardState} />
 					<RightEditForm
 						className='edit-boards__form-right'
-						state={editBoardState} />
+						state={editBoardState}
+						setState={setEditBoardState} />
 				</div>
 
 				<ButtonsContainer>

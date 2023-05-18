@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import InputBody from '../InputBody/InputBody';
 import './CheckboxForm.scss';
 
-const CheckboxForm = ({ text, title, value, checked, setChecked }) => {
+const CheckboxForm = ({ name, text, title, checked }) => {
+	let [check, setCheck] = useState(checked);
+
+	const onChangeHandler = () => { setCheck(!check) }
+	
 	return (
 		<label className='checkbox'>
 			<input className="checkbox__input"
-				type="radio"
-				name={title}
-				value={value}
-				checked={checked === value}
-				onChange={(e) => { setChecked(e.currentTarget.value) }}
+				type="checkbox"
+				name={name}
+				checked={check}
+				onChange={onChangeHandler}
 			/>
 			<div className='checkbox__custom'></div>
 			<InputBody className={'checkbox__body'} title={title} text={text} />

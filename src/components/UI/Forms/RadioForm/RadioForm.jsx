@@ -4,16 +4,16 @@ import './RadioForm.scss';
 
 const RadioForm = ({name, text, title, value, checked, setChecked }) => {
 	return (
-		<label className='checkbox'>
-			<input className="checkbox__input"
+		<label className='radio'>
+			<input className="radio__input"
 				type="radio"
 				name={name}
 				value={value}
 				checked={checked === value}
 				onChange={(e) => { setChecked(e.currentTarget.value) }}
 			/>
-			<div className='checkbox__custom'></div>
-			<InputBody className={'checkbox__body'} title={title} text={text} />
+			<div className='radio__custom'></div>
+			<InputBody className={'radio__body'} title={title} text={text} />
 		</label>
 	);
 }

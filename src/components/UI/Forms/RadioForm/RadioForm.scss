@@ -1,4 +1,4 @@
-.checkbox {
+.radio {
 	display: flex;
 	align-items: flex-start;
 	gap: 15px;
@@ -25,6 +25,7 @@
 			background: #1565C0;
 			border-radius: 100%;
 			opacity: 0;
+			transform: scale(0);
 		}
 	}
 	&__input {
@@ -32,11 +33,12 @@
 		pointer-events: none;
 		position: absolute;
 		z-index: -1;
-		&:checked + .checkbox__custom {
+		&:checked + .radio__custom {
 			background: #fff;
 			border-color: #1565C0;
 			&::after {
 				opacity: 1;
+				transform: scale(1);
 			}
 		}
 	}

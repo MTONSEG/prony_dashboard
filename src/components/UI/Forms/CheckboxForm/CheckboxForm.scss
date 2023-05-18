@@ -3,14 +3,25 @@
 	align-items: flex-start;
 	gap: 15px;
 	cursor: pointer;
+	&__custom,
+	&__custom::after {
+		transition: all .2s;
+	}
+	&__custom {
+		flex: 0 0 18px;
+		height: 18px;
+		background: #fff;
+		border: 2px solid rgba(1, 1, 1, 0.54);
+		position: relative;
+	}
 	&__input {
 		opacity: 0;
 		pointer-events: none;
 		position: absolute;
 		z-index: -1;
-	}
-	&__custom,
-	&__custom::after {
-		transition: all .2s;
+		&:checked + .checkbox__custom {
+			background: url('../../../../assets/icons/checked.svg') center/14px 10px no-repeat, #1565C0;
+			border-color: #1565C0;
+		}
 	}
 }
