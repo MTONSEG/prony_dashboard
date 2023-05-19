@@ -5,7 +5,12 @@ const InputBody = ({ title, text, className }) => {
 	return (
 		<div className={className ? `${className} input-body` : 'input-body'}>
 			<h1 className="input-body__title">{title}</h1>
-			<p className="input-body__text">{text}</p>
+			{
+				text
+					? <p className="input-body__text">{text}</p>
+					: <></>
+			}
+
 		</div>
 	)
 }

@@ -3,11 +3,11 @@
 	flex-direction: column-reverse;
 }
 
-.input,
-.input__title,
-.textarea {
-	transition: all .2s;
-}
+// .input,
+// .input__title,
+// .textarea {
+// 	transition: hover .2s;
+// }
 
 .input-title,
 .input-error-mess {
@@ -32,6 +32,11 @@
 	color: #000;
 	background: #fff;
 	outline: 4px solid transparent;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+	color: #9E9E9E;
 }
 
 .input.error,

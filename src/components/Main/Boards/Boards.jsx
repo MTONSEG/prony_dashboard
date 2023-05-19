@@ -6,6 +6,7 @@ import BoardsList from './BoardsList/BoardsList';
 import CreateBoard from './CreateBoard/CreateBoard';
 import EditBoard from './EditBoard/EditBoard';
 import DeleteBoard from './DeleteBoard/DeleteBoard';
+import EditBoardPost from './EditBoardPost/EditBoardPost';
 
 const Boards = ({ state }) => {
 	let [boardsState, setBoardsState] = useState(boardScreen);
@@ -24,6 +25,10 @@ const Boards = ({ state }) => {
 
 			<Route path='delete-board' element={
 				<DeleteBoard boardsState={boardsState} setBoardsState={setBoardsState} />
+			} />
+
+			<Route path='edit-board-post' element={
+				<EditBoardPost boardsState={boardsState} setBoardsState={setBoardsState} />
 			} />
 		</Routes>
 	)

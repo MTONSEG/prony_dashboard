@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { EyeIcon, LockIcon, OptionIcon } from '../../../UI/SVGIcons/SVGIcons';
 import ItemTableBoards from './ItemTableBoards/ItemTableBoards';
 import './TableBoards.scss';
 import { Reorder } from "framer-motion";

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import closePopupIcon from '../../../../../../assets/icons/close-popup.svg';
 import { EditPostIcon, EditSettingIcon, ListBoardIcon, RemoveBoardPostIcon, ViewBoardsPostsIcon, ViewIcon } from './Icons';
+import './OptionBoardPopup.scss';
 
 const OptionBoardPopup = ({ state, active, setActive }) => {
 	const onClickHandler = () => { setActive(!active) }

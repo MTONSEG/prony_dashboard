@@ -2,9 +2,9 @@ import React from 'react';
 import InputBody from '../InputBody/InputBody';
 import './RadioForm.scss';
 
-const RadioForm = ({name, text, title, value, checked, setChecked }) => {
+const RadioForm = ({name, text, title, value, checked, setChecked, className }) => {
 	return (
-		<label className='radio'>
+		<label className={className ? `${className} radio` : 'radio'}>
 			<input className="radio__input"
 				type="radio"
 				name={name}

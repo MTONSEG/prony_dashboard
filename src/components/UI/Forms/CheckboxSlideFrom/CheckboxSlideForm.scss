@@ -5,8 +5,12 @@
 	padding: 0 0 0 3px;
 	cursor: pointer;
 	&__custom,
+	&__body,
 	&__custom::after {
 		transition: all .2s;
+	}
+	&__body {
+		opacity: 0.5;
 	}
 	&__custom {
 		flex: 0 0 34px;
@@ -39,6 +43,9 @@
 				left: calc(100% - 17px);
 				background: #1565C0;
 			}
+		}
+		&:checked ~ .slide-checkbox__body {
+			opacity: 1;
 		}
 	}
 }

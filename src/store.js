@@ -425,6 +425,95 @@ export const boardScreen = {
 		delete: 'Delete',
 		cancel: 'Cancel',
 		text: 'This action will permanently delete the board and its content and cannot be undone. Please enter the board name to confirm.',
+	},
+	editPost: {
+		title: 'Edit board post form',
+		addBtn: 'Add field',
+		submit: 'Submit',
+		cancel: 'Cancel',
+		list: [
+			{
+				id: v1(),
+				type: 'select',
+				title: 'Title',
+				body: [
+					'Enter title',
+					'Ea elit veniam non occaecat.',
+					'Minim labore laboris in dolore.',
+					'Velit labore ipsum mollit tempor laboris nisi pariatur',
+					'Eu tempor sint amet ullamco',
+					'Elit fugiat qui veniam'
+				],
+				defaultPrivacy: 'public',
+				required: {
+					title: 'Required',
+					value: false,
+				},
+				privacy: [
+					{
+						id: v1(),
+						title: 'Public',
+						value: 'public'
+					},
+					{
+						id: v1(),
+						title: 'Private',
+						value: 'private'
+					}
+				]
+			},
+			{
+				id: v1(),
+				title: 'Details',
+				type: 'textarea',
+				body: 'Enter post title',
+				defaultPrivacy: 'public',
+				required: {
+					title: 'Required',
+					value: true,
+				},
+				privacy: [
+					{
+						id: v1(),
+						title: 'Public',
+						value: 'public'
+					},
+					{
+						id: v1(),
+						title: 'Private',
+						value: 'private'
+					}
+				]
+			},
+		],
+		popupList: [
+			{
+				id: v1(),
+				title: 'Select',
+				subtitle: 'Allows to select a value from the list of predefined values',
+			},
+			{
+				id: v1(),
+				title: 'Multi select',
+				subtitle: 'Tag posts with one or more values from a list of options',
+			},
+			{
+				id: v1(),
+				title: 'Text',
+				subtitle: 'Store any additional text data such as names, emails, links',
+			},
+			{
+				id: v1(),
+				title: 'Date',
+				subtitle: 'Add a ETA to any post',
+			},
+
+			{
+				id: v1(),
+				title: 'Captcha',
+				subtitle: 'Defend your board against spam',
+			},
+		]
 	}
 }
 

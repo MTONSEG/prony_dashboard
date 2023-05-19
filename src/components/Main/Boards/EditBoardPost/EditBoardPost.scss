@@ -1,0 +1,12 @@
+.edit-post {
+	position: relative;
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 0 16px;
+	}
+	&__form {
+		padding: 54px 50px 40px 61px;
+	}
+}
