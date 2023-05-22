@@ -4,12 +4,13 @@ import Button from '../../../UI/Buttons/Button/Button';
 import FilterPosts from './FilterPosts/FilterPosts';
 import './MainPosts.scss';
 import { ExportIcon, ImportIcon } from './MainPostSVGs/MainPostSVGs';
+import ListPosts from './ListPosts/ListPosts';
 
 
 const MainPosts = ({ state }) => {
 	let [filtersState, setFilterState] = useState(state.filters);
 	let [listPosts, setListPosts] = useState(state.posts);
-	
+
 	return (
 		<main className='main-posts'>
 			<div className="main-posts__header">
@@ -32,6 +33,9 @@ const MainPosts = ({ state }) => {
 				<FilterPosts
 					state={filtersState}
 					setState={setFilterState} />
+				<ListPosts
+					state={listPosts}
+					setState={setListPosts} />
 			</div>
 		</main>
 	)

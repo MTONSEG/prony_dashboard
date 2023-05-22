@@ -586,6 +586,17 @@ export const postList = {
 			text: 'Instead of send updates via email, send them through the original conversation on Intercom nstead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			likeNum: 24,
 			messNum: 48,
+			time: '3 min ago',
+			tags: [
+				{
+					title: 'Tagname1',
+					color: '#EB5757',
+				},
+				{
+					title: 'Tagname2',
+					color: '#27AE60',
+				},
+			]
 		},
 		{
 			id: v1(),
@@ -595,6 +606,17 @@ export const postList = {
 			text: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			likeNum: 24,
 			messNum: 48,
+			time: '3 min ago',
+			tags: [
+				{
+					title: 'Tagname1',
+					color: '#27AE60',
+				},
+				{
+					title: 'Tagname2',
+					color: '#EB5757',
+				},
+			]
 		},
 		{
 			id: v1(),
@@ -604,15 +626,33 @@ export const postList = {
 			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			likeNum: 24,
 			messNum: 48,
+			time: '3 min ago',
+			tags: [
+				{
+					title: 'Tagname1',
+					color: '#EB5757',
+				},
+				{
+					title: 'Tagname2',
+					color: '#27AE60',
+				},
+			]
 		},
 		{
 			id: v1(),
-			name: 'Sophia-RoseNava',
+			name: 'Sophia-Rose Nava',
 			photo: images.posts.postPhoto4,
 			title: 'Send status updates back through Intercom',
 			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			likeNum: 24,
 			messNum: 48,
+			time: '3 min ago',
+			tags: [
+				{
+					title: 'Tagname1',
+					color: '#27AE60',
+				}
+			]
 		},
 		{
 			id: v1(),
@@ -622,6 +662,17 @@ export const postList = {
 			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			likeNum: 24,
 			messNum: 48,
+			time: '3 min ago',
+			tags: [
+				{
+					title: 'Tagname1',
+					color: '#27AE60',
+				},
+				{
+					title: 'Tagname2',
+					color: '#EB5757',
+				},
+			]
 		},
 		{
 			id: v1(),
@@ -631,6 +682,13 @@ export const postList = {
 			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			likeNum: 24,
 			messNum: 48,
+			time: '3 min ago',
+			tags: [
+				{
+					title: 'Tagname1',
+					color: '#EB5757',
+				}
+			]
 		},
 	]
 }
