@@ -1,0 +1,26 @@
+.sort-posts {
+	display: flex;
+	justify-content: space-between;
+	&__sort,
+	&__show {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&__sort {
+		& .select-post-sort {
+			width: 116px;
+		}
+	}
+	&__show {
+		& .select-post-sort {
+			width: 61px;
+		}
+	}
+	&__title {
+		font-size: 12px;
+		line-height: 17px;
+		letter-spacing: 0.6px;
+		color: #9E9E9E
+	}
+}

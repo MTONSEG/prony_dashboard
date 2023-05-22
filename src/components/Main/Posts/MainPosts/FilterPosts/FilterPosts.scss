@@ -1,0 +1,45 @@
+.filter-posts {
+	background: #fff;
+	padding: 32px 35px 17px;
+	&__selects{
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+		margin: 0 0 16px;
+	}
+	&__search {
+		width: 32.4%;
+	}
+	&__owners,
+	&__statuses,
+	&__boards,
+	&__authors,
+	&__search {
+		min-width: 200px;
+	}
+	&__tags {
+		width: 13%;
+	}
+	&__statuses,
+	&__boards{
+		width: 13.9%;	
+	}
+	&__owners,
+	&__authors{
+		width: 20.4%;
+	}
+	&__created{
+		width: 10.3%;
+	}
+	&__segments{
+		width: 17.68%;
+	}
+	&__approved{
+		width: 12.63%;
+	}
+	&__tag-list {
+		display: flex;
+		gap: 17px;
+		margin: 0 0 37px;
+	}
+}

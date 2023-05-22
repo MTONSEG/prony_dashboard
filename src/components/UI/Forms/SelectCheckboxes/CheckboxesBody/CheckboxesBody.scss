@@ -1,0 +1,42 @@
+.body-filter-select {
+	padding: 25px 0;
+	top: calc(100% + 20px);
+	left: 50%;
+	width: 333px;
+	z-index: 1;
+	background: #fefefe;
+	font-size: 16px;
+	opacity: 0;
+	transform: translate(-100%, -50%) scale(0);
+	z-index: 6;
+	& .input-body__title {
+		font-size: 12px;
+		line-height: 17px;
+		letter-spacing: 0.6px;
+		color: #333333;
+	}
+	&__title {
+		padding: 0 30px;
+		margin: 0 0 5px;
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		color: #272557;
+	}
+
+	&__list {
+		margin: 0 0 13px;
+	}
+	&__buttons {
+		display: flex;
+		gap: 15px;
+		padding: 0 33px;
+	}
+	&__btn {
+		padding: 8px 10px;
+		min-width: 90px;
+		&:first-child {
+			padding: 8px 20px;
+		}
+	}
+}

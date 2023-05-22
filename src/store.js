@@ -6,6 +6,11 @@ import photoDashActivity1 from './assets/images/dashboard_photo-1_activity.jpg';
 import photoDashActivity2 from './assets/images/dashboard_photo-2_activity.jpg';
 import iconArrowGrey from './assets/icons/arrow-grey-down.svg';
 import iconDragAndDrop from './assets/icons/grag-drop-icon.svg';
+import postPhoto1 from './assets/images/posts_photo-1.jpg';
+import postPhoto2 from './assets/images/posts_photo-2.jpg';
+import postPhoto3 from './assets/images/posts_photo-3.jpg';
+import postPhoto4 from './assets/images/posts_photo-4.jpg';
+import postPhoto5 from './assets/images/posts_photo-5.jpg';
 
 const images = {
 	logo: logo,
@@ -20,6 +25,13 @@ const images = {
 	},
 	boards: {
 		iconDragAndDrop: iconDragAndDrop,
+	},
+	posts: {
+		postPhoto1: postPhoto1,
+		postPhoto2: postPhoto2,
+		postPhoto3: postPhoto3,
+		postPhoto4: postPhoto4,
+		postPhoto5: postPhoto5
 	}
 }
 
@@ -515,6 +527,112 @@ export const boardScreen = {
 			},
 		]
 	}
+}
+
+export const postList = {
+	title: 'Posts',
+	titleBtn: 'Create post',
+	filters: {
+		created: {
+			title: 'Created in',
+			list: [
+				'Last 24 hours',
+				'Last week',
+				'Last month'
+			]
+		},
+		authors: {
+			title: 'Authors',
+			list: ['Author Name 1', 'Author Name 1'],
+		},
+		statuses: {
+			title: 'Statuses',
+			list: ['No status', 'Status 1', 'Status 2']
+		},
+		owners: {
+			title: 'Owners',
+			list: ['John', 'Simon', 'Henry']
+		},
+		boards: {
+			title: 'Boards',
+			list: ['Board name1', 'Board name2', 'Board name3']
+		},
+		tags: {
+			title: 'Tags',
+			list: ['Tags 1', 'Tags 2', 'Tags 3']
+		},
+		segments: {
+			title: 'Segments',
+			list: ['Segments1', 'Segments2', 'Segments3']
+		},
+		approved: {
+			title: 'Approved',
+			list: ['Approved1', 'Approved2', 'Approved3']
+		},
+		merges: {
+			title: 'Merges this post into another post',
+			ph: 'Enter post name',
+		},
+		sortList: ['Newest', 'Oldest', 'Users'],
+		showList: ['10', '15', '20'],
+
+	},
+	posts: [
+		{
+			id: v1(),
+			name: 'Konnor Castro',
+			photo: images.posts.postPhoto1,
+			title: 'Send status updates back through Intercom',
+			text: 'Instead of send updates via email, send them through the original conversation on Intercom nstead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			likeNum: 24,
+			messNum: 48,
+		},
+		{
+			id: v1(),
+			name: 'Bryson Casey',
+			photo: images.posts.postPhoto2,
+			title: 'Send status updates back through Intercom',
+			text: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			likeNum: 24,
+			messNum: 48,
+		},
+		{
+			id: v1(),
+			name: 'Montana Leon',
+			photo: images.posts.postPhoto3,
+			title: 'Send status updates back through Intercom',
+			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			likeNum: 24,
+			messNum: 48,
+		},
+		{
+			id: v1(),
+			name: 'Sophia-RoseNava',
+			photo: images.posts.postPhoto4,
+			title: 'Send status updates back through Intercom',
+			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			likeNum: 24,
+			messNum: 48,
+		},
+		{
+			id: v1(),
+			name: 'Kasim Daniels',
+			photo: images.posts.postPhoto5,
+			title: 'Send status updates back through Intercom',
+			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			likeNum: 24,
+			messNum: 48,
+		},
+		{
+			id: v1(),
+			name: 'Safaa Marriotts',
+			photo: images.posts.postPhoto2,
+			title: 'Send status updates back through Intercom',
+			text: 'Instead of send updates via email, send them through the originalconversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			likeNum: 24,
+			messNum: 48,
+		},
+	]
 }
 
 export const store = {
