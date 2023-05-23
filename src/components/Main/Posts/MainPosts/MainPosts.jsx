@@ -5,6 +5,7 @@ import FilterPosts from './FilterPosts/FilterPosts';
 import './MainPosts.scss';
 import { ExportIcon, ImportIcon } from './MainPostSVGs/MainPostSVGs';
 import ListPosts from './ListPosts/ListPosts';
+import NavPosts from './NavPosts/NavPosts';
 
 
 const MainPosts = ({ state }) => {
@@ -36,6 +37,7 @@ const MainPosts = ({ state }) => {
 				<ListPosts
 					state={listPosts}
 					setState={setListPosts} />
+				<NavPosts state={filtersState} show={true} />
 			</div>
 		</main>
 	)

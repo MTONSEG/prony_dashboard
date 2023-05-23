@@ -1,0 +1,14 @@
+.footer-posts {
+	position: relative;
+	padding: 22px 50px 23px;
+	border-top: 1px solid #E0E0E0;
+	& .sort-posts__show {
+		position: absolute;
+		right: 50px;
+		top: 24px;
+	}
+	& .select-post-sort__body {
+		top: auto;
+		bottom: calc(100% + 10px);
+	}
+}

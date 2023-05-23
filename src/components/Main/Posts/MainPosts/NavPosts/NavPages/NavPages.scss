@@ -1,0 +1,61 @@
+.nav-pages,
+.nav-pages__list-page,
+.nav-pages__num-page,
+.nav-pages__start-btn,
+.nav-pages__nav-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-pages {
+	&__start-btn,
+	&__nav-btn,
+	&__num-page {
+		transition: all .2s;
+		cursor: pointer;
+		width: 34px;
+		height: 34px;
+		border-radius: 100%;
+		&:hover {
+			box-shadow: 0 0 3px #000;
+		}
+	}
+	&__start-btn {
+		&.rotate {
+			img {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&__nav-btn {
+		margin: 0 17px 0 15px;
+		&.rotate {
+			margin: 0 15px 0 17px;
+			img {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&__list-page {
+		gap: 15px;
+	}
+	&__num-page {
+		width: 34px;
+		height: 34px;
+		font-size: 17px;
+		line-height: 20px;
+		color: #272557;
+		&.active {
+			background: rgba(39, 37, 87, 0.3);
+			color: #fff;
+			pointer-events: none;
+			&:hover {
+				box-shadow: none;
+			}
+		}
+		// &:hover {
+		// 	box-shadow: 0 0 2px #000;
+		// }
+	}
+}
