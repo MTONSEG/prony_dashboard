@@ -44,22 +44,17 @@ const SelectPostForm = ({ state, ...props }) => {
 	))
 
 	return (
-		<div
-			ref={currentEl}
-			className={
-				isActive ?
-					"post-form-select active" : "post-form-select"
+		<div ref={currentEl}
+			className={isActive
+				? "post-form-select active"
+				: "post-form-select"
 			}>
-			<div
-				className="post-form-select__header"
-				onClick={handleActiveOnClick}
-			>
-				<p
-					className="post-form-select__title"
-				>
+
+			<div className="post-form-select__header"
+				onClick={handleActiveOnClick}>
+				<p className="post-form-select__title">
 					<img src={iconArrow} alt="icon" className="post-form-select__icon" />
 					{currentValue}
-
 				</p>
 			</div>
 			<ul

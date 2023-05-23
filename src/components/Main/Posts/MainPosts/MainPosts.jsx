@@ -25,7 +25,7 @@ const MainPosts = ({ state }) => {
 						<ExportIcon />
 						<p>Export</p>
 					</div>
-					<Button className={'main-posts__create-btn'}>
+					<Button link='create-post' className={'main-posts__create-btn'}>
 						{state.titleBtn}
 					</Button>
 				</div>

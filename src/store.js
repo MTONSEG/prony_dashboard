@@ -11,6 +11,7 @@ import postPhoto2 from './assets/images/posts_photo-2.jpg';
 import postPhoto3 from './assets/images/posts_photo-3.jpg';
 import postPhoto4 from './assets/images/posts_photo-4.jpg';
 import postPhoto5 from './assets/images/posts_photo-5.jpg';
+import uploadedImage from './assets/images/uploaded.jpg';
 
 const images = {
 	logo: logo,
@@ -32,6 +33,9 @@ const images = {
 		postPhoto3: postPhoto3,
 		postPhoto4: postPhoto4,
 		postPhoto5: postPhoto5
+	},
+	createPost: {
+		uploadedImage: uploadedImage,
 	}
 }
 
@@ -691,6 +695,35 @@ export const postList = {
 			]
 		},
 	]
+}
+
+export const createPost = {
+	title: 'Create post',
+	boardName: {
+		title: 'Board name',
+		list: ['1 board', '21 board', '31 board'],
+	},
+	postTitle: {
+		title: 'Title',
+		placeholder: 'Enter post title'
+	},
+	detailes: {
+		title: 'Detailes',
+		placeholder: 'Enter detailes'
+	},
+	upload: {
+		title: 'Image',
+		image: images.createPost.uploadedImage,
+	},
+	owner: {
+		title: 'Owner',
+		list: ['Jack', 'John', 'Charly'],
+	},
+	status: {
+		title: 'Status *',
+		list: ['first status', 'last-status']
+	}
+
 }
 
 export const store = {
