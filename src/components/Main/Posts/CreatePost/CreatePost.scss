@@ -5,8 +5,17 @@
 	&__form {
 		max-width: 734px;
 		height: calc(100vh - 180px);
-		max-height: 747px;
+		max-height: 755px;
 		overflow: auto;
+		&::-webkit-scrollbar {
+			width: 2px;
+		}
+		&::-webkit-scrollbar-track {
+			background:transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #1565C0;
+		}
 		& .post-form-select {
 			margin: 0 0 13px;
 			&__title {
@@ -24,7 +33,6 @@
 			content: "*";
 			display: inline-block;
 			color: #F44336;
-			// font-size: 14px;
 			margin: 0 0 0 3px;
 		}
 	}

@@ -8,6 +8,17 @@ const PostItem = ({ photo, name, title, text, tags, likes, mess, time }) => {
 
 	let [activeOption, setActiveOption] = useState();
 
+	let tagList = tags.map((el, i) => (
+		<li className='post-item__tag-item'
+			key={i}
+			style={{
+				background: el.color
+			}}
+		>
+			{el.title}
+		</li>
+	))
+
 	return (
 		<li className='post-item'>
 			<div className="post-item__image-wrap">
@@ -21,19 +32,7 @@ const PostItem = ({ photo, name, title, text, tags, likes, mess, time }) => {
 				</h1>
 				<p className="post-item__text"> {text} </p>
 				<ul className="post-item__tag-list">
-					{
-						tags.map((el, i) => (
-							<div
-								className='post-item__tag-item'
-								key={i}
-								style={{
-									background: el.color
-								}}
-							>
-								{el.title}
-							</div>
-						))
-					}
+					{tagList}
 				</ul>
 			</div>
 			<div className="post-item__stat">

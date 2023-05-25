@@ -6,10 +6,9 @@ import FormContainer from '../../../UI/Forms/FormContainer/FormContainer';
 import SelectPostForm from '../../../UI/Forms/SelectPostForm/SelectPostForm';
 import InputFrom from '../../../UI/Forms/InputFrom/InputFrom';
 import TextareaForm from '../../../UI/Forms/TextareaForm/TextareaForm';
-import InputFile from '../../../UI/Forms/InputFile/InputFile';
-import delUploadIcon from '../../../../assets/icons/close-round.svg';
 import Button from '../../../UI/Buttons/Button/Button';
 import ButtonsContainer from '../../../UI/Buttons/ButtonsContainer/ButtonsContainer';
+import UploadBlock from './UploadBlock/UploadBlock';
 
 const CreatePost = props => {
 	let [state, setState] = useState(createPost);
@@ -41,21 +40,13 @@ const CreatePost = props => {
 					setValue={setDetailVal}
 					ph={state.detailes.placeholder} />
 
-				<p className="create-posts__form-title">{state.upload.title}</p>
-				<InputFile
+				<UploadBlock
+					className='create-posts__upload'
+					title={state.upload.title}
+					image={state.upload.image}
 					drag={drag}
 					setDrag={setDrag}
-					className='create-posts__upload' />
-				{drag
-					? <div className="create-posts__uploaded">
-						<img src={state.upload.image} alt="image" />
-						<div className='create-posts__uploaded-del'
-							onClick={() => { setDrag(!drag) }}>
-							<img src={delUploadIcon} alt="del" />
-						</div>
-					</div>
-					: <></>
-				}
+				/>
 
 				<p className="create-posts__form-title important">{state.owner.title}</p>
 				<SelectPostForm

@@ -56,7 +56,10 @@ const FilterPosts = ({ state, setState }) => {
 				<TagItem text='Tag: Tagname1' />
 				<TagItem text='Author: Name 1' />
 			</div>
-			<FilterSortPosts state={state} />
+			<FilterSortPosts
+				sortList={state.sortList}
+				showList={state.showList}
+			/>
 		</div>
 	)
 }

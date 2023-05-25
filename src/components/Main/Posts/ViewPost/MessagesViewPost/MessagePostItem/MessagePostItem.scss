@@ -1,0 +1,131 @@
+.messages-post-item {
+	padding: 17px 43px 13px;
+	background: #F8F8F8;
+	position: relative;
+	&.reply {
+		padding: 17px 0 13px;
+		background: transparent;
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: calc(100% - 84px);
+			right: calc(100% - -10px);
+			width: 40px;
+			height: 135px;
+			border-left: 1px solid;
+			border-bottom: 1px solid;
+			border-color: #E0E0E0;
+		}
+	}
+	&.merge {
+		padding: 17px 28px 13px;
+		background: #fff;
+		border: 1px solid #E0E0E0;
+		border-radius: 5px;
+		margin: 0 0 20px;
+		& .messages-buttons {
+			display: none;
+		}
+		& .messages-post-item__head {
+			margin: 0 0 18px 0;
+			display: block;
+		}
+		& .messages-post-item__likes {
+			gap: 10px;
+		}
+		& .messages-post-item__merged-text {
+			font-weight: 600;
+			line-height: 21px;
+			letter-spacing: 0.07px;
+			color: #272557;
+			margin: 0 0 14px;
+		}
+	}
+	&:nth-child(2n) {
+		background: #fff;
+	}
+	&.privacy {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 2px;
+			background: #1565C0;
+		}
+	}
+
+	&__body,
+	&__head,
+	&__likes {
+		display: flex;
+		align-items: center;
+	}
+
+	&__head {
+		margin: 0 0 18px 74px;
+	}
+	
+	&__likes,
+	&__date {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+	}
+
+	&__likes {
+		cursor: pointer;
+		margin: 0 10px 0 0;
+		&.clicked {
+			& .messages-post-item__likes-icon {
+				fill:#1565C0;
+			}
+		}
+	}
+
+	&__likes-icon {
+		margin: 0 10px 4px 0;
+		fill:#E0E0E0;
+	}
+
+	&__likes-num {
+		line-height: 21px;
+		color: #9E9E9E;
+		span {
+			display: inline-block;
+			margin: 0 0 0 3px;
+		}
+	}
+
+	&__body {
+		align-items: flex-start;
+	}
+
+	&__photo {
+		flex: 0 0 50px;
+		height: 50px;
+		border-radius: 100%;
+		margin: 0 24px 0 0;
+	}
+	&__name {
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		margin: 0 0 5px;
+	}
+	&__mess {
+		line-height: 21px;
+		letter-spacing: 0.07875px;
+		margin: 0 0 15px;
+	}
+	&__mess-img-wrap {
+		width: 243px;
+		cursor: pointer;
+		margin: 0 0 19px;
+	}
+	&__mess-img {
+		width: 100%;
+		pointer-events: none;
+	}
+}

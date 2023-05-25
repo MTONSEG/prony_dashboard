@@ -12,6 +12,14 @@ import postPhoto3 from './assets/images/posts_photo-3.jpg';
 import postPhoto4 from './assets/images/posts_photo-4.jpg';
 import postPhoto5 from './assets/images/posts_photo-5.jpg';
 import uploadedImage from './assets/images/uploaded.jpg';
+import imagePostView from './assets/images/view-post_image.jpg';
+import commentImage from './assets/images/comment__image.jpg';
+import commentPhoto1 from './assets/images/comment_photo1.jpg';
+import commentPhoto2 from './assets/images/comment_photo2.jpg';
+import commentPhoto3 from './assets/images/comment_photo3.jpg';
+import commentPhoto4 from './assets/images/comment_photo4.jpg';
+import commentPhoto5 from './assets/images/comment_photo-reply.jpg';
+import commentPhoto6 from './assets/images/comment_photo-merge.jpg';
 
 const images = {
 	logo: logo,
@@ -36,7 +44,17 @@ const images = {
 	},
 	createPost: {
 		uploadedImage: uploadedImage,
-	}
+	},
+	postView: {
+		imagePostView: imagePostView,
+		commentImage: commentImage,
+		commentPhoto1: commentPhoto1,
+		commentPhoto2: commentPhoto2,
+		commentPhoto3: commentPhoto3,
+		commentPhoto4: commentPhoto4,
+		commentPhoto5: commentPhoto5,
+		commentPhoto6: commentPhoto6
+	},
 }
 
 export const navbarStore = {
@@ -720,11 +738,114 @@ export const createPost = {
 		list: ['Jack', 'John', 'Charly'],
 	},
 	status: {
-		title: 'Status *',
+		title: 'Status',
 		list: ['first status', 'last-status']
 	}
 
 }
+
+
+export const postView = {
+	title: 'Post view',
+	viewPost: {
+		name: 'Ross Gillespie',
+		photo: images.posts.postPhoto1,
+		title: 'Send status updates back through Intercom',
+		time: '3 min ago',
+		status: 'Complete',
+		text: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+		image: images.postView.imagePostView,
+		amountLikes: '24',
+		tags: [
+			{
+				title: 'Tagname1',
+				color: '#EB5757',
+			},
+			{
+				title: 'Tagname2',
+				color: '#27AE60',
+			},
+		],
+		placeholder: 'Enter detailes',
+		upload: {
+			title: 'Image',
+			image: images.createPost.uploadedImage,
+		},
+		privacy: {
+			title: 'Privacy',
+			list: [
+				{
+					title: 'Public',
+					value: 'public'
+				},
+				{
+					title: 'Private',
+					value: 'private'
+				},
+			]
+		},
+		sortList: ['Recent', 'Private', 'Public']
+	},
+	messages: [
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto1,
+			name: 'Sophia-Rose Nava',
+			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: true,
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto2,
+			name: 'Anna Walley',
+			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: false,
+			reply: [{
+				id: v1(),
+				photo: images.postView.commentPhoto5,
+				name: 'Uzair Valdez',
+				message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+				amountLikes: 3,
+				date: '01-02-2020',
+				privacy: false,
+			},],
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto3,
+			name: 'Kaylan Graham',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: false,
+			merge: [
+				{
+					id: v1(),
+					photo: images.postView.commentPhoto6,
+					name: 'Anna Walley',
+					message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+					amountLikes: 3,
+					date: '01-02-2020',
+					privacy: false,
+				},
+			],
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto4,
+			name: 'Kasim Daniels',
+			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: false,
+			image: images.postView.commentImage
+		},
+	]
+}
+
 
 export const store = {
 	headerStore: headerStore,

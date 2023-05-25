@@ -1,0 +1,51 @@
+.view-post-body  {
+	padding: 28px 41px 17px;
+	position: relative;
+	&__header,
+	&__likes,
+	&__upload-wrap,
+	&__upload-right {
+		display: flex;
+	}
+	&__upload-wrap,
+	&__header {
+		justify-content: space-between;
+	}
+	&__header {
+		margin: 0 0 12px;
+	}
+	&__likes-num {
+		font-weight: 600;
+		line-height: 29px;
+		font-size: 24px;
+		color: #272557;
+	}
+	&__likes-icon {
+		margin: 0 8px 5px 0;
+	}
+	&__textarea {
+		margin: 0 0 12px;
+		textarea {
+			height: 197px;
+			resize: vertical;
+		}
+	}
+	&__upload-wrap {
+		margin: 0 0 42px;
+		align-items: center;
+	}
+	&__upload {
+		width: 100%;
+		max-width: 970px;
+	}
+	&__radio {
+		width: 96px;
+	}
+	&__upload-right {
+		align-items: center;
+		margin: 40px 0 0;
+	}
+	&__comment-btn {
+		margin: 0 0 0 40px;
+	}
+}

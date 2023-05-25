@@ -1,0 +1,34 @@
+.messages-buttons,
+.messages-buttons__item {
+	display: flex;
+	align-items: center;
+}
+.messages-buttons {
+	gap: 27px;
+	&__icon {
+		margin: 0 6px 0 0;
+		fill: #E0E0E0;
+	}
+	&__text {
+		margin: 2px 0 0;
+		font-size: 12px;
+		line-height: 21px;
+		letter-spacing: 0.08px
+	}
+	&__item {
+		color: #9E9E9E;
+		cursor: pointer;
+		&:hover {
+			color: #1565C0;
+			.messages-buttons__icon {
+				fill: #1565C0;
+			}
+		}
+		&.private {
+			color: #1565C0;
+			& .messages-buttons__icon {
+				fill: #1565C0;
+			}
+		}
+	}
+}

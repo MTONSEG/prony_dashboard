@@ -11,7 +11,7 @@ const ListPosts = ({ state, setState }) => {
 		<ul className='posts-list'>
 			{
 				state.map(el => (
-					<PostItem 
+					<PostItem
 						key={el.id}
 						photo={el.photo}
 						name={el.name}
