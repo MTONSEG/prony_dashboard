@@ -6,6 +6,7 @@ import './MainPosts.scss';
 import { ExportIcon, ImportIcon } from './MainPostSVGs/MainPostSVGs';
 import ListPosts from './ListPosts/ListPosts';
 import NavPosts from './NavPosts/NavPosts';
+import SwopBtn from '../../../UI/Buttons/SwopBtn/SwopBtn';
 
 
 const MainPosts = ({ state }) => {
@@ -17,14 +18,19 @@ const MainPosts = ({ state }) => {
 			<div className="main-posts__header">
 				<BigTitle>{state.title}</BigTitle>
 				<div className="main-posts__header-buttonList">
-					<div className='main-posts__swop-btn import'>
+					{/* <div className='main-posts__swop-btn import'>
 						<ImportIcon />
 						<p>Import</p>
 					</div>
 					<div className='main-posts__swop-btn export'>
 						<ExportIcon />
 						<p>Export</p>
-					</div>
+					</div> */}
+					<SwopBtn
+						className='main-posts__swop-btn'
+						type='import' />
+					<SwopBtn
+						className='main-posts__swop-btn' />
 					<Button link='create-post' className={'main-posts__create-btn'}>
 						{state.titleBtn}
 					</Button>

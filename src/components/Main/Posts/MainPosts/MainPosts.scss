@@ -16,8 +16,7 @@
 		}
 	}
 	&__header,
-	&__header-buttonList,
-	&__swop-btn {
+	&__header-buttonList {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -30,29 +29,6 @@
 	}
 	&__swop-btn {
 		margin: 4px 0 0 21px;
-		cursor: pointer;
-		transition: all .2s;
-		svg path,
-		p {
-			transition: all .2s;
-		}
-		p {
-			margin: 0 0 0 10px;
-			font-weight: 600;
-			line-height: 21px;
-			letter-spacing: 0.07px;
-			color: #272557;
-		}
-		&.import {
-			&:hover svg path {
-				fill: #27AE60;
-			}
-		}
-		&.export {
-			&:hover svg path {
-				fill: #1565C0;
-			}
-		}
 	}
 	
 }
