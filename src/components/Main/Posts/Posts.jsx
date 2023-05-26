@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { postList } from '../../../store';
 import './Posts.scss';
+import VotersPosts from './VotersPosts/VotersPosts';
 
 const CreatePost = React.lazy(() => import('./CreatePost/CreatePost'));
 const MainPosts = React.lazy(() => import('./MainPosts/MainPosts'));
@@ -22,6 +23,9 @@ const Posts = (props) => {
 			} />
 			<Route path='/view-post' element={
 				<ViewPost />
+			} />
+			<Route path='/voters' element={
+				<VotersPosts />
 			} />
 		</Routes>
 	)

@@ -1,0 +1,27 @@
+.swop-btn {
+	display: flex;
+	align-items: center;
+		cursor: pointer;
+		transition: all .2s;
+		svg path,
+		p {
+			transition: all .2s;
+		}
+		p {
+			margin: 0 0 0 10px;
+			font-weight: 600;
+			line-height: 21px;
+			letter-spacing: 0.07px;
+			color: #272557;
+		}
+	&_import {
+		&:hover svg path {
+			fill: #27AE60;
+		}
+	}
+	&_export {
+		&:hover svg path {
+			fill: #1565C0;
+		}
+	}
+}

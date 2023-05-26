@@ -18,14 +18,6 @@ const MainPosts = ({ state }) => {
 			<div className="main-posts__header">
 				<BigTitle>{state.title}</BigTitle>
 				<div className="main-posts__header-buttonList">
-					{/* <div className='main-posts__swop-btn import'>
-						<ImportIcon />
-						<p>Import</p>
-					</div>
-					<div className='main-posts__swop-btn export'>
-						<ExportIcon />
-						<p>Export</p>
-					</div> */}
 					<SwopBtn
 						className='main-posts__swop-btn'
 						type='import' />

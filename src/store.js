@@ -850,6 +850,7 @@ export const voters = {
 	title: 'Voters for',
 	subtitle: '“Send status updates back through Intercom”',
 	export: 'Export',
+	popupText:'Are you sure you would like to delete this vote?',
 	list: [
 		{
 			id: v1(),

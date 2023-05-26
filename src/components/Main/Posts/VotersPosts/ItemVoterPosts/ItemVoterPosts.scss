@@ -1,0 +1,76 @@
+.item-voters {
+	background: #fff;
+	padding: 22px 22px 22px 43px;
+	display: flex;
+	align-items: center;
+	line-height: 20px;
+	position: relative;
+	&:nth-child(2n) {
+		background:#F8F8F8;
+	}
+	&__photo {
+		flex: 0 0 45px;
+		height: 45px;
+		border-radius: 100%;
+		margin: 0 27px 0 0;
+	}
+	&__name {
+		font-weight: 600;
+		letter-spacing: 0.06px;
+		margin: 0 4.44% 0 0;
+		width: 160px;
+	}
+	&__date {
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+	}
+	&__del-btn {
+		margin: 0 0 0 auto;
+		width: 16.67px;
+		height: 16.67px;
+		background:transparent;
+		fill: #E0E0E0;
+		&:hover {
+			fill:#ca2626
+		}
+	}
+	&__popup {
+		background: #FFFFFF;
+		box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+		border-radius: 10px;
+		padding: 68px 50px 36px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 2;
+		transform: scale(0);
+		opacity: 0;
+		transition: all .2s;
+		&.active {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+	&__popup-close {
+		position: absolute;
+		top: 22px;
+		right: 22px;
+		cursor: pointer;
+		transition: all .2s;
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+	&__popup-text {
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		color: #272557;
+		margin: 0 0 35px;
+	}
+	&__popup-btn-list{
+		display: flex;
+		justify-content: center;
+		gap:23px;
+	}
+}
