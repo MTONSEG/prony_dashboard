@@ -846,6 +846,61 @@ export const postView = {
 	]
 }
 
+export const voters = {
+	title: 'Voters for',
+	subtitle: '“Send status updates back through Intercom”',
+	export: 'Export',
+	list: [
+		{
+			id: v1(),
+			name: 'Sophia-Rose Nava',
+			photo: images.postView.commentPhoto1,
+			date: '6 days ago'
+		},
+		{
+			id: v1(),
+			name: 'Yuvaan Whittington',
+			photo: images.postView.commentPhoto2,
+			date: '6 days ago'
+		},
+		{
+			id: v1(),
+			name: 'Kristopher Winter',
+			photo: images.postView.commentPhoto3,
+			date: '6 days ago'
+		},
+		{
+			id: v1(),
+			name: 'Amal Gamble',
+			photo: images.postView.commentPhoto4,
+			date: '6 days ago'
+		},
+		{
+			id: v1(),
+			name: 'Amanah Mcneill',
+			photo: images.postView.commentPhoto5,
+			date: '6 days ago'
+		},
+		{
+			id: v1(),
+			name: 'Anna Walley',
+			photo: images.postView.commentPhoto6,
+			date: '6 days ago'
+		},
+		{
+			id: v1(),
+			name: 'Ashraf Ryder',
+			photo: images.postView.commentPhoto3,
+			date: '6 days ago'
+		},
+		{
+			id: v1(),
+			name: 'Clarke Wickens',
+			photo: images.postView.commentPhoto1,
+			date: '6 days ago'
+		}
+	]
+}
 
 export const store = {
 	headerStore: headerStore,
