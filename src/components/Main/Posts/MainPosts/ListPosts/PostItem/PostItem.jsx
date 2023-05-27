@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import iconLikes from '../../../../../../assets/icons/like.svg';
 import iconMess from '../../../../../../assets/icons/mess.svg';
-import { OptionIcon } from '../../../../../UI/SVGIcons/SVGIcons';
+import OptionBtn from '../../../../../UI/Buttons/OptionBtn/OptionBtn';
+import OptionPostItemPopup from './OptionPostItemPopup/OptionPostItemPopup';
 import './PostItem.scss';
 
 const PostItem = ({ photo, name, title, text, tags, likes, mess, time }) => {
 
-	let [activeOption, setActiveOption] = useState();
+	let [activeOption, setActiveOption] = useState(false);
 
 	let tagList = tags.map((el, i) => (
 		<li className='post-item__tag-item'
@@ -46,10 +47,13 @@ const PostItem = ({ photo, name, title, text, tags, likes, mess, time }) => {
 					<span className="post-item__stat-num">{mess}</span>
 				</div>
 			</div>
-			<div className="post-item__option-btn"
-				onClick={() => { setActiveOption(!activeOption) }}>
-				<OptionIcon className={'post-item__option-icon'} />
-			</div>
+			<OptionBtn
+				className="post-item__option-btn"
+				active={activeOption}
+				setActive={setActiveOption} />
+			<OptionPostItemPopup
+				active={activeOption}
+				setActive={setActiveOption} />
 		</li>
 	)
 }

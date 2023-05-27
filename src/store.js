@@ -744,6 +744,34 @@ export const createPost = {
 
 }
 
+export const editPost = {
+	title: 'Edit post',
+	boardName: {
+		title: 'Board name',
+		list: ['1 board', '21 board', '31 board'],
+	},
+	postTitle: {
+		title: 'Title',
+		placeholder: 'Enter post title'
+	},
+	detailes: {
+		title: 'Detailes',
+		placeholder: 'Enter detailes'
+	},
+	upload: {
+		title: 'Image',
+		image: images.createPost.uploadedImage,
+	},
+	owner: {
+		title: 'Owner',
+		list: ['Jack', 'John', 'Charly'],
+	},
+	status: {
+		title: 'Status',
+		list: ['first status', 'last-status']
+	}
+
+}
 
 export const postView = {
 	title: 'Post view',
@@ -850,7 +878,7 @@ export const voters = {
 	title: 'Voters for',
 	subtitle: '“Send status updates back through Intercom”',
 	export: 'Export',
-	popupText:'Are you sure you would like to delete this vote?',
+	popupText: 'Are you sure you would like to delete this vote?',
 	list: [
 		{
 			id: v1(),
@@ -908,7 +936,7 @@ export const importPost = {
 	uploadTitle: 'File',
 	board: {
 		title: 'Board selected',
-		list: ['1 board','2 board','3 board']
+		list: ['1 board', '2 board', '3 board']
 	}
 }
 

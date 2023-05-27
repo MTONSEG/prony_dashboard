@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BigTitle from '../../../UI/BigTitle/BigTitle';
-import './CreatePost.scss';
-import { createPost } from '../../../../store';
+import './EditPost.scss';
+import { editPost } from '../../../../store';
 import FormContainer from '../../../UI/Forms/FormContainer/FormContainer';
 import SelectPostForm from '../../../UI/Forms/SelectPostForm/SelectPostForm';
 import InputFrom from '../../../UI/Forms/InputFrom/InputFrom';
@@ -10,8 +10,8 @@ import Button from '../../../UI/Buttons/Button/Button';
 import ButtonsContainer from '../../../UI/Buttons/ButtonsContainer/ButtonsContainer';
 import UploadBlock from './UploadBlock/UploadBlock';
 
-const CreatePost = props => {
-	let [state, setState] = useState(createPost);
+const EditPost = props => {
+	let [state, setState] = useState(editPost);
 	let [titleVal, setTitleVal] = useState();
 	let [detailVal, setDetailVal] = useState();
 	const [drag, setDrag] = useState(false);
@@ -20,6 +20,7 @@ const CreatePost = props => {
 		<main className='create-posts'>
 			<BigTitle className='create-posts__title'>{state.title}</BigTitle>
 			<FormContainer className='create-posts__form'>
+
 				<p className="create-posts__form-title important">{state.boardName.title}</p>
 				<SelectPostForm
 					state={state.boardName.list}
@@ -46,6 +47,7 @@ const CreatePost = props => {
 					drag={drag}
 					setDrag={setDrag}
 				/>
+
 				<div className="create-posts__form-wrap">
 					<p className="create-posts__form-title important">{state.owner.title}</p>
 					<SelectPostForm
@@ -69,4 +71,4 @@ const CreatePost = props => {
 	)
 }
 
-export default CreatePost;
+export default EditPost;

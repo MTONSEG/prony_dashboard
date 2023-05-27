@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { postList } from '../../../store';
+import EditPost from './EditPost/EditPost';
 import ImportPost from './ImportPost/ImportPost';
 import './Posts.scss';
 import VotersPosts from './VotersPosts/VotersPosts';
@@ -21,6 +22,9 @@ const Posts = (props) => {
 			} />
 			<Route path='/create-post' element={
 				<CreatePost />
+			} />
+			<Route path='/edit-post' element={
+				<EditPost />
 			} />
 			<Route path='/view-post' element={
 				<ViewPost />

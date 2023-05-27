@@ -7,7 +7,10 @@ const OptionBtn = ({ className, active, setActive }) => {
 	const onClickHandler = () => { setActive(!active) }
 
 	return (
-		<div className='card-option-btn'
+		<div className={className
+			? `${className} card-option-btn`
+			: 'card-option-btn'
+		}
 			onClick={onClickHandler}>
 			<OptionIcon
 				className={'table-boards__icon'} />

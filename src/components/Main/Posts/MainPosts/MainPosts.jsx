@@ -20,7 +20,8 @@ const MainPosts = ({ state }) => {
 				<div className="main-posts__header-buttonList">
 					<SwopBtn
 						className='main-posts__swop-btn'
-						type='import' />
+						type='import'
+						importLink='import' />
 					<SwopBtn
 						className='main-posts__swop-btn' />
 					<Button link='create-post' className={'main-posts__create-btn'}>

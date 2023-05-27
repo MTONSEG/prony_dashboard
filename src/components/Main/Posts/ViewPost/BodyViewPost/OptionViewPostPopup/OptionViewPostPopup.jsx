@@ -30,7 +30,7 @@ const OptionViewPostPopup = ({ state, active, setActive }) => {
 					<RemoveBoardPostIcon />
 					<span>Delete post</span>
 				</Link>
-				<Link to='/boards/edit-board'
+				<Link to='/posts/edit-post'
 					className="popup-boards__item"
 					onClick={onClickHandler}>
 					<EditPostIcon />
