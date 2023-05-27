@@ -50,25 +50,31 @@ const Breadcrumbs = ({ state, children }) => {
 					<>
 						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
 						<Link to="/posts" className='breadcrumbs__link'>Posts</Link>
-						<Link to="/posts/create-post" className='breadcrumbs__link'>Create post</Link>
+						<Link to="" className='breadcrumbs__link'>Create post</Link>
 					</>
 				} />
 				<Route path="/posts/view-post" element={
 					<>
 						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
 						<Link to="/posts" className='breadcrumbs__link'>Posts</Link>
-						<Link to="/posts/view-post" className='breadcrumbs__link'>Post view</Link>
+						<Link to="" className='breadcrumbs__link'>Post view</Link>
 					</>
 				} />
 				<Route path="/posts/voters" element={
 					<>
 						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
 						<Link to="/posts" className='breadcrumbs__link'>Posts</Link>
-						<Link to="/posts/view-post" className='breadcrumbs__link'>Post voters</Link>
+						<Link to="" className='breadcrumbs__link'>Post voters</Link>
+					</>
+				} />
+				<Route path="/posts/import" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/posts" className='breadcrumbs__link'>Posts</Link>
+						<Link to="" className='breadcrumbs__link'>Import post</Link>
 					</>
 				} />
 			</Routes>
-
 		</div>
 	)
 }

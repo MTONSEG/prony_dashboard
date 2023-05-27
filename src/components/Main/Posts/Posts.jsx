@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { postList } from '../../../store';
+import ImportPost from './ImportPost/ImportPost';
 import './Posts.scss';
 import VotersPosts from './VotersPosts/VotersPosts';
 
@@ -26,6 +27,9 @@ const Posts = (props) => {
 			} />
 			<Route path='/voters' element={
 				<VotersPosts />
+			} />
+			<Route path='/import' element={
+				<ImportPost />
 			} />
 		</Routes>
 	)

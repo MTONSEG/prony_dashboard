@@ -903,6 +903,15 @@ export const voters = {
 	]
 }
 
+export const importPost = {
+	title: 'Import post',
+	uploadTitle: 'File',
+	board: {
+		title: 'Board selected',
+		list: ['1 board','2 board','3 board']
+	}
+}
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore
