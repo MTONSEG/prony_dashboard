@@ -87,6 +87,13 @@ const Breadcrumbs = ({ state, children }) => {
 						<Link to="/tags" className='breadcrumbs__link'>Tags</Link>
 					</>
 				} />
+				<Route path="/tags/edit" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/tags" className='breadcrumbs__link'>Tags</Link>
+						<Link to="/tags/edit" className='breadcrumbs__link'>Edit Tags</Link>
+					</>
+				} />
 			</Routes>
 		</div>
 	)

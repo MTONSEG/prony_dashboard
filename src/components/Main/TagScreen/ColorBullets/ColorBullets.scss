@@ -1,0 +1,36 @@
+.color-bullets {
+	margin: 0 0 26px;
+	&__title {
+		line-height: 21px;
+		letter-spacing: 0.07875px;
+		color: #9E9E9E;
+		margin: 0 0 14px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 34px);
+		gap: 12px 18px;
+	}
+	&__item {
+		height: 34px;
+		border-radius: 100%;
+		cursor: pointer;
+		transition: all .2s;
+		position: relative;
+		&.clicked {
+			pointer-events: none;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: url('../../../../assets/icons/checked.svg') center/14px 10px no-repeat;
+			}
+		}
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}

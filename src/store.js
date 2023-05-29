@@ -977,6 +977,135 @@ export const tagScreen = {
 	]
 }
 
+export const editTag = {
+	title: 'Edit tag',
+	name: {
+		title: 'Name',
+		value: 'Tagname1',
+		ph: 'Enter tagname'
+	},
+	colors: {
+		title: 'Colors',
+		list: [
+			{
+				id: v1(),
+				clicked: false,
+				color: '#B71C1C'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#DE3B31'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#FF6B62'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#43A047'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#62C966'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#ADF1B0'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#0F498C'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#1565C0'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#4A98F1'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#A4CEFF'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#FF9800'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#FFD600'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#FFED8D'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#474747'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#818181'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#CCCCCC'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#6D28AE'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#A258E7'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#CD98FF'
+			},
+			{
+				id: v1(),
+				clicked: false,
+				color: '#E6CBFF'
+			},
+
+		],
+	},
+	privacy: {
+		title: 'Privacy',
+		text: 'Private tags are only visible to moderators.',
+		list: [
+			{
+				title: 'Public',
+				value: 'public'
+			},
+			{
+				title: 'Private',
+				value: 'private'
+			},
+		]
+	}
+}
+
 
 export const store = {
 	headerStore: headerStore,

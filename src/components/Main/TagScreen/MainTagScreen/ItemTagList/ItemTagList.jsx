@@ -2,6 +2,7 @@ import React from 'react';
 import './ItemTagList.scss';
 import { RemoveBoardPostIcon, ReplaceIcon } from '../../../Boards/TableBoards/ItemTableBoards/OptionBoardPopup/Icons';
 import { EditMessIcon } from '../../../Posts/ViewPost/IconsViewPost/IconsViewPost';
+import { Link } from 'react-router-dom';
 
 const ItemTagList = ({ className, title, color, privacy }) => {
 
@@ -24,15 +25,15 @@ const ItemTagList = ({ className, title, color, privacy }) => {
 						: "item-tag-list__privacy private"
 					}>{privacy}</div>
 				<div className="item-tag-list__button-list">
-					<button className='item-tag-list__btn'>
+					<Link to='replace' className='item-tag-list__btn'>
 						<ReplaceIcon />
-					</button>
-					<button className='item-tag-list__btn'>
+					</Link>
+					<Link to='edit' className='item-tag-list__btn'>
 						<EditMessIcon />
-					</button>
-					<button className='item-tag-list__btn'>
+					</Link>
+					<Link to='' className='item-tag-list__btn'>
 						<RemoveBoardPostIcon />
-					</button>
+					</Link>
 				</div>
 			</div>
 		</li>
