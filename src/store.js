@@ -940,6 +940,44 @@ export const importPost = {
 	}
 }
 
+export const tagScreen = {
+	title: 'Tags',
+	titleBtn: 'Add tag',
+	list: [
+		{
+			id: v1(),
+			title: 'Tagname1',
+			color: '#F44336',
+			privacy: 'public'
+		},
+		{
+			id: v1(),
+			title: 'Tagname1',
+			color: '#1565C0',
+			privacy: 'private'
+		},
+		{
+			id: v1(),
+			title: 'Tagname1',
+			color: '#43A047',
+			privacy: 'public'
+		},
+		{
+			id: v1(),
+			title: 'Tagname1',
+			color: '#BB6BD9',
+			privacy: 'private'
+		},
+		{
+			id: v1(),
+			title: 'Tagname1',
+			color: ' #C4C4C4',
+			privacy: 'public'
+		},
+	]
+}
+
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore
