@@ -1,0 +1,26 @@
+.header-user-list {
+	padding: 27px 35px 17px;
+	border-bottom: 1px solid #E0E0E0;
+	&__select-list,
+	&__tags {
+		display: flex;
+		align-items: center;
+	}
+	&__select-list {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		margin: 0 0 14px;
+	}
+	&__select {
+		width: 200px;
+		&.segments {
+			width: 280px;
+		}
+	}
+	&__tags {
+		gap: 12px;
+		flex-wrap: wrap;
+		margin: 0 0 39px;
+	}
+}

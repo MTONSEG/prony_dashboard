@@ -108,6 +108,12 @@ const Breadcrumbs = ({ state, children }) => {
 						<Link to="/tags/replace" className='breadcrumbs__link'>Replace tag</Link>
 					</>
 				} />
+				<Route path="/users" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/Users" className='breadcrumbs__link'>Users</Link>
+					</>
+				} />
 			</Routes>
 		</div>
 	)

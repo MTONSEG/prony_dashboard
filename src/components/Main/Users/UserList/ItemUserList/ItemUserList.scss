@@ -1,0 +1,63 @@
+.item-user-list {
+	background: #F8F8F8;
+	padding: 38px 25px 37px 69px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	&:nth-child(2n) {
+		background: #fff;
+	}
+	&__photo {
+		width: 65px;
+		height: 65px;
+		border-radius: 100%;
+		margin: 0 31px 0 0;
+	}
+	&__info {
+		margin: 0 106px 0 0;
+		line-height: 21px;
+	}
+	&__name {
+		letter-spacing: 0.06px;
+		font-weight: 600;
+	}
+	&__mail {
+		letter-spacing: 0.09px;
+		font-size: 16px;
+		color: #1565C0;
+		margin: 0 0 6px;
+	}
+	&__date {
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+	}
+	&__amount-list,
+	&__amount-item {
+		display: flex;
+		align-items: center;
+	}
+	&__amount-list {
+		gap: 48px;
+		margin: 0 115px 0 0;
+	}
+	&__amount-item {
+		gap: 12px;
+	}
+	&__amount-item,
+	&__status {
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+	}
+
+	&__status {
+		&.member {
+			color: #9E9E9E;
+		}
+	}
+
+	&__option-btn.card-option-btn {
+		margin-left: auto;
+	}
+}

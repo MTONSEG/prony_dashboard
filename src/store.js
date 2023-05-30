@@ -1115,6 +1115,104 @@ export const replaceTag = {
 	}
 }
 
+export const userList = {
+	title: 'Users',
+	segments: {
+		title: 'User segments',
+		list: ['Segment1', 'Segment2', 'Segment3']
+	},
+	role: {
+		title: 'Role',
+		list: ['Role1', 'Role2', 'Role3']
+	},
+	mail: {
+		title: 'E-mail',
+		list: ['Enter e-mail', 'test@mail.ru', 'admin@prony.io']
+	},
+	firstName: {
+		title: 'First name',
+		list: ['First name 1', 'First name 2', 'First name 3']
+	},
+	lastName: {
+		title: 'Last name',
+		list: ['Last Name 1', 'Last Name 2', 'Last Name 3']
+	},
+	banned: {
+		title: 'Banned',
+		value: true
+	},
+	sortList: ['Last activity', 'Forst activity', 'Other'],
+	showList: ['10', '15', '20'],
+	users: [
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto1,
+			name: 'Kairo Bruce',
+			mail: 'anna_w@gmail.com',
+			date: '21-01-2019',
+			status: 'Admin',
+			postNum: '23',
+			likesNum: '123',
+			messNum: '64'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto2,
+			name: 'Lowri Leach',
+			mail: 'anna_w@gmail.com',
+			date: '21-01-2019',
+			status: 'Admin',
+			postNum: '23',
+			likesNum: '123',
+			messNum: '64'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto3,
+			name: 'Maria Gallegos',
+			mail: 'anna_w@gmail.com',
+			date: '21-01-2019',
+			status: 'Member',
+			postNum: '23',
+			likesNum: '123',
+			messNum: '64'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto4,
+			name: 'Kristopher Winter',
+			mail: 'anna_w@gmail.com',
+			date: '21-01-2019',
+			status: 'Admin',
+			postNum: '23',
+			likesNum: '123',
+			messNum: '64'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto5,
+			name: 'Yuvaan Whittington',
+			mail: 'anna_w@gmail.com',
+			date: '21-01-2019',
+			status: 'Member',
+			postNum: '23',
+			likesNum: '123',
+			messNum: '64'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto6,
+			name: 'Clarke Wickens',
+			mail: 'anna_w@gmail.com',
+			date: '21-01-2019',
+			status: 'Admin',
+			postNum: '23',
+			likesNum: '123',
+			messNum: '64'
+		},
+	]
+}
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore

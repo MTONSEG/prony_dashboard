@@ -24,7 +24,9 @@ const BodyViewPost = ({ state, className }) => {
 						{state.amountLikes}
 					</p>
 				</div>
-				<OptionBtn active={activeOption} setActive={setActiveOption} />
+				<OptionBtn
+					active={activeOption}
+					setActive={setActiveOption} />
 			</div>
 			<PostViewItem
 				className='view-post-body__post-wrap'

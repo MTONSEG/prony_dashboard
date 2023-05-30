@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import EditTags from './EditTags/EditTags';
 import MainTagScreen from './MainTagScreen/MainTagScreen';

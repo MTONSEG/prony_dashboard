@@ -3,6 +3,7 @@ import './SelectCheckboxes.scss';
 import iconArrow from '../../../../assets/icons/select-arr-tringle.svg';
 import CheckboxForm from '../CheckboxForm/CheckboxForm';
 import CheckboxesBody from './CheckboxesBody/CheckboxesBody';
+import SelectPostForm from '../SelectPostForm/SelectPostForm';
 
 const SelectCheckboxes = ({ state, ...props }) => {
 	let [isActive, setActive] = useState(false);
@@ -58,7 +59,10 @@ const SelectCheckboxes = ({ state, ...props }) => {
 				className={'filter-checkbox__body'}
 				onBtnClick={handleActiveOnClick}
 			>
-				{checkboxItems}
+				{props.select
+					? <SelectPostForm state={state.list} />
+					: checkboxItems
+				}
 			</CheckboxesBody>
 		</div>)
 }
