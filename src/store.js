@@ -1357,6 +1357,84 @@ export const userDetails = {
 	}
 }
 
+export const userActivity = {
+	title: 'Activities',
+	list: [
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto1,
+			name: 'Sophia-Rose Nava',
+			activity: 'upvoted',
+			time: '6 min ago',
+			title: 'Welcome to Nolt #1',
+			text: ''
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto2,
+			name: 'Yuvaan Whittington',
+			activity: 'upvoted',
+			time: '38 min ago',
+			title: 'Tips and Tricks #2',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto1,
+			name: 'Sophia-Rose Nava',
+			activity: 'upvoted',
+			time: '56 min ago',
+			title: 'Welcome to Nolt #1',
+			text: ''
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto2,
+			name: 'Yuvaan Whittington',
+			activity: 'upvoted',
+			time: '1 day ago',
+			title: 'Tips and Tricks #2',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto1,
+			name: 'Sophia-Rose Nava',
+			activity: 'upvoted',
+			time: '1 day ago',
+			title: 'Welcome to Nolt #1',
+			text: ''
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto2,
+			name: 'Yuvaan Whittington',
+			activity: 'upvoted',
+			time: '1 day ago',
+			title: 'Tips and Tricks #2',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto1,
+			name: 'Sophia-Rose Nava',
+			activity: 'upvoted',
+			time: '1 day ago',
+			title: 'Welcome to Nolt #1',
+			text: ''
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto2,
+			name: 'Yuvaan Whittington',
+			activity: 'upvoted',
+			time: '1 day ago',
+			title: 'Tips and Tricks #2',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+	]
+}
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore
