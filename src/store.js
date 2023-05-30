@@ -1435,6 +1435,38 @@ export const userActivity = {
 	]
 }
 
+export const userSegments = {
+	title: 'User Segments',
+	titleBtn: 'Add new segment',
+	list: [
+		{
+			id: v1(),
+			name: 'Segment Name 1',
+			representation: 'company is “value”'
+		},
+		{
+			id: v1(),
+			name: 'Segment Name 1',
+			representation: 'created after “value”'
+		},
+		{
+			id: v1(),
+			name: 'Segment Name 1',
+			representation: 'company is “value”'
+		},
+		{
+			id: v1(),
+			name: 'Segment Name 1',
+			representation: 'company is “value”'
+		},
+		{
+			id: v1(),
+			name: 'Segment Name 1',
+			representation: 'company is “value”'
+		},
+	]
+}
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore
