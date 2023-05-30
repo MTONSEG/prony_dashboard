@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import UserDetails from './UserDetails/UserDetails';
 import UserList from './UserList/UserList';
 import './Users.scss';
 
@@ -8,6 +9,9 @@ const Users = (props) => {
 		<Routes>
 			<Route path='/' element={
 				<UserList />
+			} />
+			<Route path='details' element={
+				<UserDetails />
 			} />
 		</Routes>
 	)

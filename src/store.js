@@ -20,10 +20,12 @@ import commentPhoto3 from './assets/images/comment_photo3.jpg';
 import commentPhoto4 from './assets/images/comment_photo4.jpg';
 import commentPhoto5 from './assets/images/comment_photo-reply.jpg';
 import commentPhoto6 from './assets/images/comment_photo-merge.jpg';
+import userPhoto from './assets/images/user-photo.jpg';
 
 const images = {
 	logo: logo,
 	iconTabArrow: iconTabArrow,
+	userPhoto: userPhoto,
 	header: {
 		photoUserHeader: photoUserHeader
 	},
@@ -55,6 +57,7 @@ const images = {
 		commentPhoto5: commentPhoto5,
 		commentPhoto6: commentPhoto6
 	},
+
 }
 
 export const navbarStore = {
@@ -1211,6 +1214,147 @@ export const userList = {
 			messNum: '64'
 		},
 	]
+}
+
+export const userDetails = {
+	title: 'User Details',
+	photo: images.userPhoto,
+	name: 'Kairo Bruce',
+	mail: 'anna_w@gmail.com',
+	date: '21-01-2019',
+	status: 'Admin',
+	postNum: {
+		title: 'Posts',
+		value: '123',
+	},
+	likesNum: {
+		title: 'Votes',
+		value: '1023'
+	},
+	messNum: {
+		title: 'Comments',
+		value: '1064'
+	},
+	posts: {
+		title: '10 last posts',
+		list: [
+			{
+				id: v1(),
+				num: 123,
+				title: 'How do I put an \'if clause\' in an SQL string?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'SQL “between” not inclusive',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'Is there a performance difference between CTE , Sub-Query, Temporary Table or Table Variable?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'Is there a LastIndexOf in SQL Server?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'How do I put an \'if clause\' in an SQL string?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'SQL “between” not inclusive',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'Is there a performance difference between CTE , Sub-Query, Temporary Table or Table Variable?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'Is there a LastIndexOf in SQL Server?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'Is there a performance difference between CTE , Sub-Query, Temporary Table or Table Variable?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				num: 123,
+				title: 'Is there a LastIndexOf in SQL Server?',
+				date: '21-01-2019',
+			},
+		]
+	},
+	votes: {
+		title: '10 last Votes',
+		list: [
+			{
+				id: v1(),
+				title: 'How do I put an \'if clause\' in an SQL string?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'SQL “between” not inclusive',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'Is there a performance difference between CTE , Sub-Query, Temporary Table or Table Variable?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'Is there a LastIndexOf in SQL Server?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'How do I put an \'if clause\' in an SQL string?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'SQL “between” not inclusive',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'Is there a performance difference between CTE , Sub-Query, Temporary Table or Table Variable?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'Is there a LastIndexOf in SQL Server?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'Is there a performance difference between CTE , Sub-Query, Temporary Table or Table Variable?',
+				date: '21-01-2019',
+			},
+			{
+				id: v1(),
+				title: 'Is there a LastIndexOf in SQL Server?',
+				date: '21-01-2019',
+			},
+		]
+	}
 }
 
 export const store = {

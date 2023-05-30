@@ -1,0 +1,75 @@
+.header-user-detail {
+	padding: 46px 54px 83px;
+	display: flex;
+	align-items: center;
+	&__amount-item,
+	&__amount-list {
+		display: flex;
+		align-items: center;
+	}
+	&__photo-wrap {
+		margin: 0 56px 0 0;
+	}
+	&__photo {
+		width: 136px;
+		height: 136px;
+		border-radius: 100%;
+		margin: 0 0 15px;
+	}
+	&__status {
+		text-align: center;
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		color: #272557;
+	}
+	&__info {
+		margin: 0 123px 0 0;
+	}
+	&__name {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 38px;
+		letter-spacing: -0.22px;
+		margin: 0 0 2px;
+	}
+	&__mail {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		color: #1565C0;
+		margin: 0 0 9px;
+	}
+	&__date {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #9E9E9E;
+		margin: 0 123px 0 0;
+	}
+	&__amount-list {
+		gap: 60px;
+	}
+	&__amount-item {
+		gap: 15px; 
+	}
+	&__icon {
+		width: 22px;
+		height: 20px;
+	}
+	&__title-num {
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #272557;
+	}
+	&__num {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 38px;
+		letter-spacing: -0.219429px;
+		color: #272557;
+	}
+	
+}
