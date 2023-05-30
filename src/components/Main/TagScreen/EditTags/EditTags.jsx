@@ -41,8 +41,8 @@ const EditTags = ({ add }) => {
 					setPrivacy={setPrivacyValue}
 				/>
 				<ButtonsContainer>
-					<Button color="grey">Cancel</Button>
-					<Button>Submit</Button>
+					<Button link='/tags' color="grey">Cancel</Button>
+					<Button link='/tags'>Submit</Button>
 				</ButtonsContainer>
 			</FormContainer>
 		</div>

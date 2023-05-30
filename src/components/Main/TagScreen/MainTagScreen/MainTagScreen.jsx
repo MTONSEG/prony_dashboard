@@ -12,7 +12,7 @@ const MainTagScreen = (props) => {
 		<div className='tag-screen'>
 			<div className="tag-screen__header">
 				<BigTitle>{state.title}</BigTitle>
-				<Button>{state.titleBtn}</Button>
+				<Button link='add'>{state.titleBtn}</Button>
 			</div>
 			<div className="tag-screen__body">
 				<div className="tag-screen__head-list">

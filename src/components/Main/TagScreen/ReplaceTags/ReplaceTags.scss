@@ -1,0 +1,18 @@
+.replace-tag {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__body {
+		max-width: 597px;
+	}
+	&__form-title {
+		margin: 0 0 20px;
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		color: #272557;
+	}
+	&__button-list {
+		margin: 39px 0 0;
+	}
+}

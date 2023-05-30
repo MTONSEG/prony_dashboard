@@ -1106,6 +1106,14 @@ export const editTag = {
 	}
 }
 
+export const replaceTag = {
+	title: 'Replace tag',
+	formData: {
+		title: 'Replaces Tagname1 tag with another tag',
+		ph: 'Select tag',
+		list: ['Select tag', 'Tagname1', 'Tagname2']
+	}
+}
 
 export const store = {
 	headerStore: headerStore,
