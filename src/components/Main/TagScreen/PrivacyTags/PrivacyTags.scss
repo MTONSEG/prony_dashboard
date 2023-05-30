@@ -1,8 +1,26 @@
-.edit-tag {
-	&__title {
-		margin: 0 0 22px;
-	}
+.privacy-tag{
 	&__body {
 		max-width: 597px;
+	}
+	&__title,
+	&__text {
+		color: #9E9E9E;
+	}
+	&__title {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		margin: 0 0 10px;
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 13px;
+		letter-spacing: 0.3px;
+	}
+	&__radio-list {
+		margin: 0 0 8px;
+		display: flex;
+	}
+	&__radio {
+		width: 100px;
 	}
 }
