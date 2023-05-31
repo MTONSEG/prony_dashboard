@@ -5,6 +5,7 @@ import './ListChangelog.scss';
 import NavPosts from '../../Posts/MainPosts/NavPosts/NavPosts';
 import HeaderChangelogList from './HeaderChangelogList/HeaderChangelogList';
 import ItemChangelogList from './ItemChangelogList/ItemChangelogList';
+import Button from '../../../UI/Buttons/Button/Button';
 
 const ListChangelog = (props) => {
 	const [state, setState] = useState(listChangelog)
@@ -19,7 +20,14 @@ const ListChangelog = (props) => {
 	))
 	return (
 		<div className='changelog-list'>
-			<BigTitle className='changelog-list__title'>{state.title}</BigTitle>
+			<div className="changelog-list__header">
+				<BigTitle className='changelog-list__title'>
+					{state.title}
+				</BigTitle>
+				<Button link='add'>
+					{state.titleBtn}
+				</Button>
+			</div>
 			<div className="changelog-list__container">
 				<HeaderChangelogList state={state} />
 				<ul className="changelog-list__list">
