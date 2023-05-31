@@ -8,10 +8,13 @@ const Changelog = (props) => {
 	return (
 		<Routes>
 			<Route path='/' element={
-				<ListChangelog/>
+				<ListChangelog />
 			} />
 			<Route path='add' element={
 				<AddRecordChangelog />
+			} />
+			<Route path='edit' element={
+				<AddRecordChangelog edit={true} />
 			} />
 		</Routes>
 	)

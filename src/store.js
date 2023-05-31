@@ -1698,6 +1698,7 @@ export const listChangelog = {
 
 export const addRecord = {
 	title: 'Add record',
+	titleEdit: 'Edit record',
 	name: {
 		title: 'Title',
 		ph: 'Title',
@@ -1708,8 +1709,24 @@ export const addRecord = {
 	},
 	labels: {
 		title: 'Labels',
-		list: ['Chose a label', 'Admin', 'Feedback', 'Changelog']
-	}
+		list: ['Chose a label', 'Admin', 'Feedback', 'Changelog'],
+		items: [
+			{
+				title: 'Admin',
+				color: '#272557',
+				bg: '#BFBECD'
+			},
+			{
+				title: 'Feedback',
+				color: '#fff',
+				bg: '#03B8FD'
+			}
+		]
+	},
+	upload: {
+		title: 'Image',
+		image: images.createPost.uploadedImage,
+	},
 }
 
 export const store = {
