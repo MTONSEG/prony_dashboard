@@ -4,11 +4,6 @@ import './ColorBullets.scss';
 const ColorBullets = ({ state, setState }) => {
 	const [list, setList] = useState(state.colors.list);
 
-
-	const onClickHandler = (e) => {
-		console.log(e.currentTarget)
-	}
-
 	const changeCheck = (id) => {
 		let newList = [...list];
 

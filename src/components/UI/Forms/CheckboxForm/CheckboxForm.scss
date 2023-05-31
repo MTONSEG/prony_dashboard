@@ -11,7 +11,9 @@
 		flex: 0 0 18px;
 		height: 18px;
 		background: #fff;
-		border: 2px solid rgba(1, 1, 1, 0.54);
+		border: 2px solid #BEBECD;
+		border-radius: 3px;
+		overflow: hidden;
 		position: relative;
 	}
 	&__input {

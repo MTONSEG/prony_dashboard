@@ -1477,9 +1477,77 @@ export const addSegments = {
 	company: ['Company', 'Created'],
 	is: ['is', 'on', 'in'],
 	value: {
-		title:'value'
+		title: 'value'
 	},
 	attr: ['Select attribute', 'Select attribute 2', 'Select attribute 3']
+}
+
+export const listStatus = {
+	title: 'Statuses',
+	titleBtn: 'Add status',
+	titleReset: 'Reset to default',
+	list: [
+		{
+			id: v1(),
+			name: 'Segment Name 1',
+			votable: true,
+			roadmap: false,
+			privacy: true,
+			color: '#43A047'
+		},
+		{
+			id: v1(),
+			name: 'Archived',
+			votable: false,
+			roadmap: true,
+			privacy: false,
+			color: '#E0E0E0'
+		},
+		{
+			id: v1(),
+			name: 'Segment Name 1',
+			votable: true,
+			roadmap: false,
+			privacy: true,
+			color: '#E65100'
+		},
+	]
+}
+
+export const addStatus = {
+	title: 'Add status',
+	titleEdit: 'Edit status',
+	name: {
+		title: 'Name',
+		ph: 'Enter status name'
+	},
+	checkboxes: [
+		{
+			title: 'Votable',
+			text: 'Defines if posts in this status can get votes',
+			value: true
+		},
+		{
+			title: 'Show on roadmap',
+			text: 'Defines if posts in this status should be added to the roadmap',
+			value: false,
+		}
+	],
+	privacy: {
+		title: 'Privacy',
+		text: 'Privacy flag that defines post visibility and tag visibility at the board',
+		list: [
+			{
+				title: 'Public',
+				value: 'public',
+			},
+			{
+				title: 'Private',
+				value: 'private'
+			}
+		]
+	},
+	colors: editTag.colors
 }
 
 export const store = {

@@ -9,6 +9,7 @@ const Boards = React.lazy(() => import('./Boards/Boards.jsx'));
 const Posts = React.lazy(() => import('./Posts/Posts.jsx'));
 const TagsScreen = React.lazy(() => import('./TagScreen/TagScreen.jsx'));
 const Users = React.lazy(() => import('./Users/Users.jsx'));
+const Statuses = React.lazy(() => import('./Statuses/Statuses.jsx'));
 
 const Main = ({ state }) => {
 	return (
@@ -22,6 +23,7 @@ const Main = ({ state }) => {
 					<Route path="/posts/*" element={<Posts />} />
 					<Route path="/tags/*" element={<TagsScreen />} />
 					<Route path="/users/*" element={<Users />} />
+					<Route path="/statuses/*" element={<Statuses />} />
 				</Routes>
 			</Suspense>
 		</div>

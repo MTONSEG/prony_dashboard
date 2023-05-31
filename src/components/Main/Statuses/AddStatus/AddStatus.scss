@@ -1,0 +1,20 @@
+.add-status {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__container {
+		max-width: 597px;
+	}
+	&__name {
+		margin: 0 0 32px;
+	}
+	&__checkbox {
+		margin: 0 0 18px;
+	}
+	&__privacy {
+		margin: 32px 0 32px;
+	}
+	& .color-bullets {
+		margin: 0 0 54px;
+	}
+}
