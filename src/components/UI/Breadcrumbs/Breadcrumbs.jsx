@@ -135,6 +135,20 @@ const Breadcrumbs = ({ state, children }) => {
 						<Link to="/users/segments" className='breadcrumbs__link'>User Segments</Link>
 					</>
 				} />
+				<Route path="/users/segments/add" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/users" className='breadcrumbs__link'>Users</Link>
+						<Link to="/users/add" className='breadcrumbs__link'>Add user segment</Link>
+					</>
+				} />
+				<Route path="/users/segments/edit" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/users" className='breadcrumbs__link'>Users</Link>
+						<Link to="/users/add" className='breadcrumbs__link'>Edit user segment</Link>
+					</>
+				} />
 			</Routes>
 		</div>
 	)

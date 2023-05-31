@@ -1467,6 +1467,21 @@ export const userSegments = {
 	]
 }
 
+export const addSegments = {
+	title: 'Add user segment',
+	titleEdit: 'Edit user segment',
+	name: {
+		title: 'Name',
+		ph: 'Enter user segment name'
+	},
+	company: ['Company', 'Created'],
+	is: ['is', 'on', 'in'],
+	value: {
+		title:'value'
+	},
+	attr: ['Select attribute', 'Select attribute 2', 'Select attribute 3']
+}
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore

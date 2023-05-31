@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import AddUserSegments from './AddUserSegments/AddUserSegments';
 import UserActivities from './UserActivities/UserActivities';
 import UserDetails from './UserDetails/UserDetails';
 import UserList from './UserList/UserList';
@@ -20,6 +21,12 @@ const Users = (props) => {
 			} />
 			<Route path='segments' element={
 				<UserSegments />
+			} />
+			<Route path='segments/add' element={
+				<AddUserSegments />
+			} />
+			<Route path='segments/edit' element={
+				<AddUserSegments edit={true} />
 			} />
 		</Routes>
 	)
