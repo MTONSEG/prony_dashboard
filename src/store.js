@@ -1550,6 +1550,168 @@ export const addStatus = {
 	colors: editTag.colors
 }
 
+export const listChangelog = {
+	title: 'Changelog records',
+	titleBtn: 'Add record',
+	labels: {
+		title: 'Labels',
+		list: ['Labels', 'Label1', 'Label2']
+	},
+	time: {
+		title: 'Publish time',
+		list: ['Publish time', 'Publish time 2', 'Publish time 3']
+	},
+	showList: ['10', '15', '20'],
+	list: [
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: '2 weeks ago',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+				{
+					title: 'Feedback',
+					color: '#fff',
+					bg: '#03B8FD'
+				}
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: 'yesterday',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				}
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: '32 min ago',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: '32 min ago',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: 'last week',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: '2 weeks ago',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: '32 min ago',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: 'last week',
+			labels: [
+				{
+					title: 'Changelog',
+					color: '#fff',
+					bg: '#546E7A'
+				},
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: '2 weeks ago',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+		{
+			id: v1(),
+			title: 'Send status updates back through Intercom',
+			time: 'last week',
+			labels: [
+				{
+					title: 'Admin',
+					color: '#272557',
+					bg: '#BFBECD'
+				},
+			]
+		},
+	]
+}
+
+export const addRecord = {
+	title: 'Add record',
+	name: {
+		title: 'Title',
+		ph: 'Title',
+	},
+	details: {
+		title: 'Detailes',
+		ph: 'Detailes'
+	},
+	labels: {
+		title: 'Labels',
+		list: ['Chose a label', 'Admin', 'Feedback', 'Changelog']
+	}
+}
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore

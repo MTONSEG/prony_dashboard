@@ -1,0 +1,61 @@
+.user-activities {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__container {
+		background: #FFFFFF;
+		box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+		border-radius: 10px;
+		overflow-y: hidden;
+		padding: 22px 0 0px;
+	}
+	&__item {
+		background: #fff;
+		display: flex;
+		align-items: center;
+		padding: 16px 43px 15px;
+		&:nth-child(2n) {
+			background: #F8F8F8;
+		}
+	}
+	&__photo {
+		width: 45px;
+		height: 45px;
+		border-radius: 100%;
+		margin: 0 27px 0 0;
+	}
+	&__info {
+		width: 140px;
+		margin: 0 92px 0 0;
+	}
+	&__name {
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+	}
+	&__activity {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #1565C0;
+	}
+	&__time {
+		width: 100px;
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+		margin: 0 63px 0 0;
+	}
+	&__item-title {
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0.07px;
+		color: #272557;
+	}
+	&__item-text {
+		margin: 9px 0 0;
+		font-size: 12px;
+		line-height: 17px;
+		letter-spacing: 0.6px;
+		color: #272557;
+	}
+}
