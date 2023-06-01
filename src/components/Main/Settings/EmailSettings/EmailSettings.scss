@@ -1,0 +1,59 @@
+.settings-email {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__container {
+		background: #FFFFFF;
+		box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+		border-radius: 10px;
+		max-width: 955px;
+		padding: 0 0 43px;
+	}
+	&__header,
+	&__body {
+		display: flex;
+
+	}
+	&__header {
+		padding: 22px 44px;
+		border-bottom: 1px solid #E0E0E0;
+	}
+
+	&__body{
+		padding: 27px 44px 0;
+	}
+
+	&__btn-wrap {
+		padding: 0 44px;
+	}
+	&__header-title {
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #272557;
+		&.admin {
+			flex: 0 0 277px;
+		}
+	}
+	&__header-title,
+	&__user-settings {
+		width: 100%;
+		&.admin {
+			flex: 0 0 277px;
+		}
+	}
+	&__checkbox {
+		max-width: 478px;
+		margin: 0 0 13px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__select {
+		max-width: 233px;
+		padding: 0 0 0 32px;
+		& .post-form-select__title {
+			color: #000;
+		}
+	}
+}

@@ -1938,40 +1938,44 @@ export const settings = {
 			]
 		},
 		upload: {
-			
+
 		}
 	},
 	email: {
 		title: 'Email settings',
-		user: [
-			{
-				id: v1(),
-				title: 'Status Change Email',
-				text: 'We\'ll email voters when your team changes the status of a Post. When you update the status of a Post, you\'ll see this option to "Notify all voters"',
-				value: true
-			},
-			{
-				id: v1(),
-				title: 'Admin Responses in Post Comments',
-				text: 'We\'ll email voters when your team responds to a Post',
-				value: false
-			},
-			{
-				id: v1(),
-				title: 'Mention Email',
-				text: 'Emails we send when anyone gets @mentioned in a Post',
-				value: false
-			},
-			{
-				id: v1(),
-				title: 'Weekly User Report',
-				text: 'Prony regular user updates regarding new Posts.',
-				value: false
-			},
-		],
+		user: {
+			title: 'User email settings',
+			list: [
+				{
+					id: v1(),
+					title: 'Status Change Email',
+					text: 'We\'ll email voters when your team changes the status of a Post. When you update the status of a Post, you\'ll see this option to "Notify all voters"',
+					value: true
+				},
+				{
+					id: v1(),
+					title: 'Admin Responses in Post Comments',
+					text: 'We\'ll email voters when your team responds to a Post',
+					value: false
+				},
+				{
+					id: v1(),
+					title: 'Mention Email',
+					text: 'Emails we send when anyone gets @mentioned in a Post',
+					value: false
+				},
+				{
+					id: v1(),
+					title: 'Weekly User Report',
+					text: 'Prony regular user updates regarding new Posts.',
+					value: false
+				},
+			]
+		},
 		admin: {
 			title: 'Admin Report email',
-			list: ['Daily', 'Monthly']
+			list: ['Daily', 'Monthly'],
+			value: true,
 		}
 	},
 	sso: {

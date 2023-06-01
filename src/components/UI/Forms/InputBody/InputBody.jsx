@@ -1,7 +1,8 @@
 import React from "react";
 import './InputBody.scss';
+import SelectPostForm from '../SelectPostForm/SelectPostForm';
 
-const InputBody = ({ title, text, className }) => {
+const InputBody = ({ title, text, className}) => {
 	return (
 		<div className={className ? `${className} input-body` : 'input-body'}>
 			<h1 className="input-body__title">{title}</h1>
@@ -10,7 +11,6 @@ const InputBody = ({ title, text, className }) => {
 					? <p className="input-body__text">{text}</p>
 					: <></>
 			}
-
 		</div>
 	)
 }

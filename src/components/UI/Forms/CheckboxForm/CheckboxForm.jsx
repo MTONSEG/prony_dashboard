@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import InputBody from '../InputBody/InputBody';
 import './CheckboxForm.scss';
 
-const CheckboxForm = ({ name, text, title, checked, className }) => {
+const CheckboxForm = ({ name, text, title, checked, className}) => {
 	let [check, setCheck] = useState(checked);
 
 	const onChangeHandler = () => { setCheck(!check) }
@@ -16,7 +16,10 @@ const CheckboxForm = ({ name, text, title, checked, className }) => {
 				onChange={onChangeHandler}
 			/>
 			<div className='checkbox__custom'></div>
-			<InputBody className={'checkbox__body'} title={title} text={text} />
+			<InputBody
+				className={'checkbox__body'}
+				title={title}
+				text={text} />
 		</label>
 	);
 }
