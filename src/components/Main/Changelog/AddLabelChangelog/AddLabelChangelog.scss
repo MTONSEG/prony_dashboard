@@ -1,0 +1,19 @@
+.add-label {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__body {
+		max-width: 734px;
+		& .color-bullets {
+			margin: 0 0 54px;
+		}
+	}
+	&__form-item {
+		margin: 0 0 13px;
+	}
+	&__label-list {
+		display: flex;
+		gap: 15px;
+		margin: 13px 0 53px;
+	}
+}

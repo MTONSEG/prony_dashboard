@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ColorBullets.scss';
 
-const ColorBullets = ({ state, setState }) => {
+const ColorBullets = ({ state, setState, className }) => {
 	const [list, setList] = useState(state.colors.list);
 
 	const changeCheck = (id) => {

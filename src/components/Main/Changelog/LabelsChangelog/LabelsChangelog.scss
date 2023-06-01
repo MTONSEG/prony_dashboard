@@ -3,27 +3,15 @@
 	&__header-list,
 	&__header-item,
 	&__item,
-	&__item-text,
 	&__button-list {
 		display: flex;
 		align-items: center;
 	}
-	&__header,
-	&__reset-btn {
+	&__header {
 		justify-content: space-between;
 	}
 	&__header {
 		margin: 0 0 22px;
-	}
-	&__header-right {
-		gap: 27px;
-	}
-	&__reset-btn {
-		gap: 11px;
-		font-weight: 600;
-		letter-spacing: 0.07px;
-		line-height: 21px;
-		color: #272557;
 	}
 	&__container {
 		background: #FFFFFF;
@@ -37,10 +25,6 @@
 	}
 	&__header-item {
 		width: 100%;
-		font-size: 16px;
-		line-height: 21px;
-		letter-spacing: 0.09px;
-		color: #272557;
 		&.name {
 			max-width: 335px;
 		}

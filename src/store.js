@@ -308,6 +308,7 @@ export const dashboardScreen = {
 		],
 	}
 }
+
 export const boardScreen = {
 	title: 'Boards',
 	titleBtn: 'Create Board',
@@ -1752,6 +1753,50 @@ export const labelList = {
 			bg: '#BFBECD',
 		},
 	]
+}
+
+export const addLabel = {
+	title: 'Adds new changelog label',
+	titleEdit: 'Edit changelog label',
+	name: {
+		title: 'Name',
+		ph: 'Enter status name'
+	},
+	colors: {
+		title: 'Color',
+		list: [
+			{
+				id: v1(),
+				color: '#546E7A',
+				clicked: false
+			},
+			{
+				id: v1(),
+				color: '#03B8FD',
+				clicked: false
+			},
+			{
+				id: v1(),
+				color: '#BFBECD',
+				clicked: false
+			},
+			{
+				id: v1(),
+				color: '#272557',
+				clicked: false
+			},
+			{
+				id: v1(),
+				color: '#2C629E',
+				clicked: false
+			},
+			{
+				id: v1(),
+				color: '#435B66',
+				clicked: false
+			},
+		]
+	}
 }
 
 export const store = {
