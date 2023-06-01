@@ -186,7 +186,14 @@ const Breadcrumbs = ({ state, children }) => {
 					<>
 						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
 						<Link to="/changelog" className='breadcrumbs__link'>Changelog</Link>
-						<Link to="/changelog/edit" className='breadcrumbs__link'>edit record</Link>
+						<Link to="/changelog/edit" className='breadcrumbs__link'>Edit record</Link>
+					</>
+				} />
+				<Route path="/changelog/labels" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/changelog" className='breadcrumbs__link'>Changelog</Link>
+						<Link to="/changelog/labels" className='breadcrumbs__link'>Changelog Labels</Link>
 					</>
 				} />
 			</Routes>

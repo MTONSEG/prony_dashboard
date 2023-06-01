@@ -1729,6 +1729,31 @@ export const addRecord = {
 	},
 }
 
+export const labelList = {
+	title: 'Changelog Labels',
+	titleBtn: 'Add label',
+	list: [
+		{
+			id: v1(),
+			title: 'Changelog',
+			color: '#fff',
+			bg: '#546E7A'
+		},
+		{
+			id: v1(),
+			title: 'Feedback',
+			color: '#fff',
+			bg: '#03B8FD'
+		},
+		{
+			id: v1(),
+			title: 'Admin',
+			color: '#272557',
+			bg: '#BFBECD',
+		},
+	]
+}
+
 export const store = {
 	headerStore: headerStore,
 	navbarStore: navbarStore

@@ -3,9 +3,15 @@ import iconDelTag from '../../../../../../assets/icons/close-blue-dark.svg';
 import './TagItem.scss';
 
 
-const TagItem = ({text, style}) => {
+const TagItem = ({ text, style, className }) => {
 	return (
-		<div className='tag-item' style={style}>
+		<div
+			style={style}
+			className={
+				className
+					? `${className} tag-item`
+					: 'tag-item'
+			}>
 			{text}
 			<img src={iconDelTag} alt="del" />
 		</div>

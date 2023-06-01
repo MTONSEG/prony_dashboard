@@ -3,8 +3,9 @@ import { Route, Routes } from 'react-router-dom';
 import './Changelog.scss';
 import ListChangelog from './ListChangelog/ListChangelog';
 import AddRecordChangelog from './AddRecordChangelog/AddRecordChangelog';
+import LabelsChangelog from './LabelsChangelog/LabelsChangelog';
 
-const Changelog = (props) => {
+const Changelog = props => {
 	return (
 		<Routes>
 			<Route path='/' element={
@@ -15,6 +16,9 @@ const Changelog = (props) => {
 			} />
 			<Route path='edit' element={
 				<AddRecordChangelog edit={true} />
+			} />
+			<Route path='labels' element={
+				<LabelsChangelog />
 			} />
 		</Routes>
 	)

@@ -1,0 +1,87 @@
+.list-labels {
+	&__header,
+	&__header-list,
+	&__header-item,
+	&__item,
+	&__item-text,
+	&__button-list {
+		display: flex;
+		align-items: center;
+	}
+	&__header,
+	&__reset-btn {
+		justify-content: space-between;
+	}
+	&__header {
+		margin: 0 0 22px;
+	}
+	&__header-right {
+		gap: 27px;
+	}
+	&__reset-btn {
+		gap: 11px;
+		font-weight: 600;
+		letter-spacing: 0.07px;
+		line-height: 21px;
+		color: #272557;
+	}
+	&__container {
+		background: #FFFFFF;
+		box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+		border-radius: 10px;
+		overflow-y:	hidden;
+		padding: 0 0 22px;
+	}
+	&__header-list {
+		padding: 22px 69px;
+	}
+	&__header-item {
+		width: 100%;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #272557;
+		&.name {
+			max-width: 335px;
+		}
+	}
+	&__item {
+		padding: 28px 35px 28px 69px;
+		position: relative;
+		user-select: none;
+		line-height: 21px;
+		color: #9E9E9E;
+		background: #F8F8F8;
+		&:nth-child(2n){
+			background: #fff;
+		}
+	}
+	&__drag-icon {
+		position: absolute;
+		top: 50%;
+		left: 25px;
+		transform: translateY(-50%);
+		z-index: 1;
+		cursor: pointer;
+	}
+	&__label {
+		width: 100%;
+		max-width: 335px;
+	}
+	&__color-round {
+		flex: 0 0 29px;
+		height: 29px;
+		border-radius: 100%;
+	}
+	&__button-list {
+		margin: 0 0 0 auto;
+		fill: #E0E0E0;
+		gap: 25px;
+		svg {
+			cursor: pointer;
+			&:hover path {
+				fill: #1565C0;
+			}
+		}
+	}
+}
