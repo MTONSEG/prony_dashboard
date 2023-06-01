@@ -5,6 +5,7 @@ import ListChangelog from './ListChangelog/ListChangelog';
 import AddRecordChangelog from './AddRecordChangelog/AddRecordChangelog';
 import LabelsChangelog from './LabelsChangelog/LabelsChangelog';
 import AddLabelChangelog from './AddLabelChangelog/AddLabelChangelog';
+import ChangelogSettings from '../Settings/ChangelogSettings/ChangelogSettings';
 
 const Changelog = props => {
 	return (
@@ -26,6 +27,9 @@ const Changelog = props => {
 			} />
 			<Route path='labels/edit' element={
 				<AddLabelChangelog edit={true} />
+			} />
+			<Route path='settings' element={
+				<ChangelogSettings />
 			} />
 		</Routes>
 	)

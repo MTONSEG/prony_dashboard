@@ -20,7 +20,7 @@ const Navbar = ({ state }) => {
 
 	let listSetting = state.setting.list.map((el, i) => (
 		<li key={i} className="settings-navbar__item">
-			<Link to="" className='settings-navbar__link'>{el}</Link>
+			<Link to={el.url} className='settings-navbar__link'>{el.title}</Link>
 		</li>
 	))
 

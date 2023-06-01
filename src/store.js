@@ -21,6 +21,9 @@ import commentPhoto4 from './assets/images/comment_photo4.jpg';
 import commentPhoto5 from './assets/images/comment_photo-reply.jpg';
 import commentPhoto6 from './assets/images/comment_photo-merge.jpg';
 import userPhoto from './assets/images/user-photo.jpg';
+import langFlagUsa from './assets/icons/usa.svg';
+import langFlagGermany from './assets/icons/germany.svg';
+
 
 const images = {
 	logo: logo,
@@ -57,6 +60,10 @@ const images = {
 		commentPhoto5: commentPhoto5,
 		commentPhoto6: commentPhoto6
 	},
+	language: {
+		usa: langFlagUsa,
+		germany: langFlagGermany
+	}
 
 }
 
@@ -65,7 +72,32 @@ export const navbarStore = {
 	setting: {
 		title: 'Settings',
 		icon: images.iconTabArrow,
-		list: ['Settings 1', 'Settings 2', 'Settings 3']
+		list: [
+			{
+				url: '/settings/general',
+				title: 'General'
+			},
+			{
+				url: '/settings/appearance',
+				title: 'Appearance'
+			},
+			{
+				url: '/changelog/settings',
+				title: 'Changelog'
+			},
+			{
+				url: '/settings/domain',
+				title: 'Custom domain'
+			},
+			{
+				url: '/settings/email',
+				title: 'Email'
+			},
+			{
+				url: '/settings/sso',
+				title: 'SSO'
+			},
+		]
 	},
 }
 
@@ -1797,6 +1829,135 @@ export const addLabel = {
 			},
 		]
 	}
+}
+
+export const settings = {
+	changelog: {
+		title: 'Changelog settings',
+		privacy: {
+			title: 'Privacy',
+			list: [
+				{
+					id: v1(),
+					title: 'Public',
+					text: 'Show this changelog on the public view so all users can find and access it.',
+					value: 'public'
+				},
+				{
+					id: v1(),
+					title: 'Private',
+					text: 'The changelog will not be shown to your users anymore.',
+					value: 'private'
+				},
+			]
+		},
+		indexed: {
+			title: 'Indexed',
+			text: 'Changelog will be indexed by search engines like Google. Turn it off if you don’t want that.',
+			value: true,
+		}
+	},
+	general: {
+		title: 'General settings',
+		name: {
+			title: 'Name',
+			ph: 'Enter status name'
+		},
+		language: {
+			title: 'Language',
+			eng: [
+				{
+					id: v1(),
+					title: 'English',
+					text: 'English, US',
+					flag: images.language.usa
+				},
+				{
+					id: v1(),
+					title: 'English',
+					text: 'English, US',
+					flag: images.language.usa
+				},
+				{
+					id: v1(),
+					title: 'English',
+					text: 'English, US',
+					flag: images.language.usa
+				},
+			],
+			de: [
+				{
+					id: v1(),
+					title: 'German',
+					text: 'Deutsch',
+					flag: images.language.germany
+				},
+				{
+					id: v1(),
+					title: 'German',
+					text: 'Deutsch',
+					flag: images.language.germany
+				},
+				{
+					id: v1(),
+					title: 'German',
+					text: 'Deutsch',
+					flag: images.language.germany
+				},
+			]
+		},
+		show: {
+			title: 'Show on roadmap',
+			value: true
+		},
+		indexed: {
+			title: 'Indexed',
+			text: 'Changelog will be indexed by search engines like Google. Turn it off if you don’t want that.',
+			value: true
+		}
+	},
+	appearance: {
+		title: 'Appearance'
+	},
+	email: {
+		title: 'Email settings',
+		user: [
+			{
+				id: v1(),
+				title: 'Status Change Email',
+				text: 'We\'ll email voters when your team changes the status of a Post. When you update the status of a Post, you\'ll see this option to "Notify all voters"',
+				value: true
+			},
+			{
+				id: v1(),
+				title: 'Admin Responses in Post Comments',
+				text: 'We\'ll email voters when your team responds to a Post',
+				value: false
+			},
+			{
+				id: v1(),
+				title: 'Mention Email',
+				text: 'Emails we send when anyone gets @mentioned in a Post',
+				value: false
+			},
+			{
+				id: v1(),
+				title: 'Weekly User Report',
+				text: 'Prony regular user updates regarding new Posts.',
+				value: false
+			},
+		],
+		admin: {
+			title: 'Admin Report email',
+			list: ['Daily', 'Monthly']
+		}
+	},
+	sso: {
+		title: 'SSO'
+	},
+	domain: {
+		title: 'Custom domain'
+	},
 }
 
 export const store = {

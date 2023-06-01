@@ -1,0 +1,20 @@
+.settings-changelog {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__body {
+		max-width: 597px;
+	}
+	&__privacy {
+		margin: 0 0 25px;
+	}
+	&__privacy-radio,
+	&__privacy-title {
+		margin: 0 0 10px;
+	}
+	&__privacy-title {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+	}
+}

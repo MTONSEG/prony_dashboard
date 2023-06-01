@@ -212,6 +212,48 @@ const Breadcrumbs = ({ state, children }) => {
 						<Link to="/changelog/labels" className='breadcrumbs__link'>Edit changelog label label</Link>
 					</>
 				} />
+				<Route path="/changelog/settings" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/changelog" className='breadcrumbs__link'>Changelog</Link>
+						<Link to="/changelog/labels" className='breadcrumbs__link'>Changelog settings</Link>
+					</>
+				} />
+				<Route path="/settings/general" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/settings" className='breadcrumbs__link'>Settings</Link>
+						<Link to="/changelog/labels" className='breadcrumbs__link'>General settings</Link>
+					</>
+				} />
+				<Route path="/settings/appearance" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/settings" className='breadcrumbs__link'>Settings</Link>
+						<Link to="/settings/labels" className='breadcrumbs__link'>Appearance</Link>
+					</>
+				} />
+				<Route path="/settings/sso" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/settings" className='breadcrumbs__link'>Settings</Link>
+						<Link to="/settings/labels" className='breadcrumbs__link'>SSO</Link>
+					</>
+				} />
+				<Route path="/settings/email" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/settings" className='breadcrumbs__link'>Settings</Link>
+						<Link to="/settings/labels" className='breadcrumbs__link'>Email settings</Link>
+					</>
+				} />
+				<Route path="/settings/domain" element={
+					<>
+						<Link to="/" className='breadcrumbs__link'>Dashboard</Link>
+						<Link to="/settings" className='breadcrumbs__link'>Settings</Link>
+						<Link to="/settings/labels" className='breadcrumbs__link'>Custom domain</Link>
+					</>
+				} />
 			</Routes>
 		</div>
 	)
