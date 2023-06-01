@@ -1921,7 +1921,25 @@ export const settings = {
 		}
 	},
 	appearance: {
-		title: 'Appearance'
+		title: 'Appearance',
+		theme: {
+			title: 'Theme',
+			list: [
+				{
+					name: 'light',
+					bg: '#F9F9FC',
+					colors: ['#1565C0', '#E0E0E0', '#272557']
+				},
+				{
+					name: 'dark',
+					bg: '#202020',
+					colors: ['#1565C0', '#505050', '#fff']
+				},
+			]
+		},
+		upload: {
+			
+		}
 	},
 	email: {
 		title: 'Email settings',

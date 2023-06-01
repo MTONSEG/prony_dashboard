@@ -12,16 +12,19 @@ const UploadBlock = ({ className, title, image, drag, setDrag }) => {
 				drag={drag}
 				setDrag={setDrag}
 				className='upload-block__upload' />
-			{drag
-				? <div className="upload-block__uploaded">
-					<img src={image} alt="image" />
-					<div className='upload-block__uploaded-del'
-						onClick={() => { setDrag(!drag) }}>
-						<img src={delUploadIcon} alt="del" />
+			{image
+				? drag
+					? <div className="upload-block__uploaded">
+						<img src={image} alt="image" />
+						<div className='upload-block__uploaded-del'
+							onClick={() => { setDrag(!drag) }}>
+							<img src={delUploadIcon} alt="del" />
+						</div>
 					</div>
-				</div>
+					: <></>
 				: <></>
 			}
+
 		</div>
 	)
 }

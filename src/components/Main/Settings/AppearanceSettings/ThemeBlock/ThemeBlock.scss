@@ -1,0 +1,13 @@
+.theme-wrap {
+	margin: 0 0 54px;
+	&__title {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+		margin: 0 0 17px;
+	}
+	&__list {
+		display: flex;
+		gap: 20px;
+	}
+}

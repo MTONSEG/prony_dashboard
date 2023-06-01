@@ -7,10 +7,6 @@ const InputFile = ({ className, drag, setDrag }) => {
 	const [files, setFiles] = useState();
 
 	useEffect(() => {
-		console.log(files)
-	}, [files])
-
-	useEffect(() => {
 		if (!drag) setFiles('');
 	}, [drag])
 

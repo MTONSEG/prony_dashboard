@@ -1,0 +1,30 @@
+.appearance {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__body {
+		max-width: 734px;
+		& .color-bullets {
+			margin: 0 0 54px;
+		}
+	}
+	&__upload-list {
+		display: flex;
+		gap: 31px;
+		margin: 0 0 27px;
+		& .upload-block {
+			width: 50%;
+		}
+		& .input-file__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0;
+			line-height: 16px;
+			img {
+				width: 16px;
+				margin: 0 0 11px;
+			}
+		}
+	}
+}
