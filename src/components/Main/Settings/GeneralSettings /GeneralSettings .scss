@@ -1,0 +1,48 @@
+.settings-general {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__body {
+		max-width: 734px;
+		& .color-bullets {
+			margin: 0 0 54px;
+		}
+	}
+	&__name-form {
+		margin: 0 0 19px;
+	}
+	&__from-title {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+		margin: 0 0 6px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 17px 14px;
+		margin: 0 0 33px;
+	}
+	&__item {
+		background: #F6F6F6;
+		border-radius: 5px;
+		position: relative;
+		& .radio {
+			padding: 7px 50px 8px 11px;
+			align-items: center;
+		}
+	}
+	&__flag-image {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
+	}
+	&__checkbox {
+		margin: 0 0 15px;
+		&.indexed {
+			margin: 0 0 54px;
+			max-width: 420px;
+		}
+	}
+}

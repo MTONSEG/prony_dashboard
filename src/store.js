@@ -1863,48 +1863,52 @@ export const settings = {
 			title: 'Name',
 			ph: 'Enter status name'
 		},
-		language: {
+		lang: {
 			title: 'Language',
-			eng: [
+			list: [
 				{
 					id: v1(),
 					title: 'English',
 					text: 'English, US',
+					value: 'eng1',
 					flag: images.language.usa
+				},
+				{
+					id: v1(),
+					title: 'German',
+					text: 'Deutsch',
+					value: 'de1',
+					flag: images.language.germany
 				},
 				{
 					id: v1(),
 					title: 'English',
 					text: 'English, US',
+					value: 'eng2',
 					flag: images.language.usa
+				},
+				{
+					id: v1(),
+					title: 'German',
+					text: 'Deutsch',
+					value: 'de2',
+					flag: images.language.germany
 				},
 				{
 					id: v1(),
 					title: 'English',
 					text: 'English, US',
+					value: 'eng3',
 					flag: images.language.usa
+				},
+				{
+					id: v1(),
+					title: 'German',
+					text: 'Deutsch',
+					value: 'de3',
+					flag: images.language.germany
 				},
 			],
-			de: [
-				{
-					id: v1(),
-					title: 'German',
-					text: 'Deutsch',
-					flag: images.language.germany
-				},
-				{
-					id: v1(),
-					title: 'German',
-					text: 'Deutsch',
-					flag: images.language.germany
-				},
-				{
-					id: v1(),
-					title: 'German',
-					text: 'Deutsch',
-					flag: images.language.germany
-				},
-			]
 		},
 		show: {
 			title: 'Show on roadmap',
