@@ -3,6 +3,7 @@ import { Reorder, useDragControls } from "framer-motion";
 import { ReorderIcon } from "../../Boards/TableBoards/ItemTableBoards/Icon.jsx";
 import { EditMessIcon } from '../../Posts/ViewPost/IconsViewPost/IconsViewPost.jsx';
 import { RemoveBoardPostIcon } from '../../Boards/TableBoards/ItemTableBoards/OptionBoardPopup/Icons.jsx';
+import { Link } from 'react-router-dom';
 
 const ItemUserSegment = ({ item }) => {
 	const dragControls = useDragControls();
@@ -46,8 +47,8 @@ const ItemUserSegment = ({ item }) => {
 				style={{ background: item.color }}
 				className="list-status__color-round"></p>
 			<div className="list-status__button-list">
-				<EditMessIcon />
-				<RemoveBoardPostIcon />
+				<Link to='edit'><EditMessIcon /></Link>
+				<Link><RemoveBoardPostIcon /></Link>
 			</div>
 		</Reorder.Item>
 	)

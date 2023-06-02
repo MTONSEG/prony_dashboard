@@ -28,8 +28,8 @@ const AddLabelChangelog = ({ edit }) => {
 					state={state}
 					setState={setState} />
 				<ButtonsContainer>
-					<Button link='/labels' color="grey">Cancel</Button>
-					<Button link='/labels'>Submit</Button>
+					<Button link='/changelog/labels' color="grey">Cancel</Button>
+					<Button link='/changelog/labels'>Submit</Button>
 				</ButtonsContainer>
 			</FormContainer>
 		</div>

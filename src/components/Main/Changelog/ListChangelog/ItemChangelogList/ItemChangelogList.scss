@@ -44,8 +44,8 @@
 	&__button-list {
 		gap: 24px;
 		margin: 0 0 0 auto;
-		fill: #E0E0E0;
-		svg{
+		svg {
+			fill: #E0E0E0;
 			cursor: pointer;
 			&:hover path {
 				fill: #1565C0;

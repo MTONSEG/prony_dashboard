@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './ItemChangelogList.scss';
 import { EditMessIcon } from '../../../Posts/ViewPost/IconsViewPost/IconsViewPost';
 import { RemoveBoardPostIcon } from '../../../Boards/TableBoards/ItemTableBoards/OptionBoardPopup/Icons';
+import { Link } from 'react-router-dom';
 
 const ItemChangelogList = ({ title, time, labels }) => {
 	const [activeOption, setActiveOption] = useState(false);
-	
+
 	return (
 		<li className='item-changelog-list'>
 			<p className="item-changelog-list__title">{title}</p>
@@ -24,8 +25,8 @@ const ItemChangelogList = ({ title, time, labels }) => {
 				))}
 			</ul>
 			<div className="item-changelog-list__button-list">
-				<EditMessIcon />
-				<RemoveBoardPostIcon />
+				<Link to='edit'><EditMessIcon /></Link>
+				<Link><RemoveBoardPostIcon /></Link>
 			</div>
 		</li>
 	)

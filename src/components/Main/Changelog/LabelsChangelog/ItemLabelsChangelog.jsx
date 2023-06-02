@@ -4,6 +4,7 @@ import { ReorderIcon } from "../../Boards/TableBoards/ItemTableBoards/Icon.jsx";
 import { EditMessIcon } from '../../Posts/ViewPost/IconsViewPost/IconsViewPost.jsx';
 import { RemoveBoardPostIcon } from '../../Boards/TableBoards/ItemTableBoards/OptionBoardPopup/Icons.jsx';
 import TagItem from '../../Posts/MainPosts/FilterPosts/TagItem/TagItem.jsx';
+import { Link } from 'react-router-dom';
 
 const ItemLabelsChangelog = ({ item }) => {
 	const dragControls = useDragControls();
@@ -30,8 +31,8 @@ const ItemLabelsChangelog = ({ item }) => {
 				style={{ background: item.bg }}
 				className="list-labels__color-round"></p>
 			<div className="list-labels__button-list">
-				<EditMessIcon />
-				<RemoveBoardPostIcon />
+				<Link to='edit'><EditMessIcon /></Link>
+				<Link><RemoveBoardPostIcon /></Link>
 			</div>
 		</Reorder.Item>
 	)
