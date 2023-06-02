@@ -1,0 +1,60 @@
+.settings-domain {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__body {
+		max-width: 797px;
+	}
+	&__privacy {
+		margin: 0 0 25px;
+	}
+	&__privacy-radio,
+	&__privacy-title {
+		margin: 0 0 10px;
+	}
+	&__privacy-title {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+	}
+	&__text-wrap {
+		margin: 0 0 20px;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #272557;
+		margin: 0 0 30px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__link {
+		display: inline-block;
+		margin: 0 0 0 3px;
+		color: #1565C0;
+		text-decoration: underline;
+	}
+
+	&__disabled {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+		background: rgba(224, 224, 224, 0.2);
+		border-radius: 5px;
+		padding: 13px 25px;
+		margin: 0 0 12px;
+	}
+	&__domain-inp {
+		margin: 0 0 30px;
+	}
+	&__warning {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #1565C0;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+}

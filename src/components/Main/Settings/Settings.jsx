@@ -5,6 +5,7 @@ import AppearanceSettings from './AppearanceSettings/AppearanceSettings';
 import EmailSettings from './EmailSettings/EmailSettings';
 import GeneralSettings from './GeneralSettings /GeneralSettings ';
 import SsoSettings from './SsoSettings/SsoSettings';
+import DomainSettings from './DomainSettings/DomainSettings';
 
 const Settings = props => {
 	return (
@@ -21,9 +22,9 @@ const Settings = props => {
 			<Route path='/sso' element={
 				<SsoSettings />
 			} />
-			{/* <Route path='/domain' element={
+			<Route path='/domain' element={
 				<DomainSettings />
-			} /> */}
+			} />
 		</Routes>
 	)
 }

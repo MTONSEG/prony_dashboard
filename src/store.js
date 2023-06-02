@@ -1998,7 +1998,8 @@ export const settings = {
 		}
 	},
 	domain: {
-		title: 'Custom domain'
+		title: 'Custom domain',
+		
 	},
 }
 
