@@ -1,0 +1,38 @@
+.item-sso-step {
+	position: relative;
+	padding: 0 0 0 37px;
+	&:last-child {
+		margin: 0;
+	}
+	&__step {
+		position: absolute;
+		top: -1px;
+		left: 0;
+		width: 22px;
+		height: 22px;
+		background: #E0E0E0;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.0595px;
+		color: #9E9E9E;
+		border-radius: 100%;
+		padding: 1px 0 0;
+	}
+	&__title {
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.05px;
+		color: #272557;
+		margin: 0 0 6px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 13px;
+		letter-spacing: 0.3px;
+		color: #9E9E9E;
+		margin: 0 0 23px;
+	}
+}

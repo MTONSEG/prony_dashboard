@@ -1979,7 +1979,23 @@ export const settings = {
 		}
 	},
 	sso: {
-		title: 'SSO'
+		title: 'SSO',
+		defTitle: 'Setup SSO',
+		redirect: {
+			title: 'Setup SSO redirect',
+			steps: [
+				{
+					step: 1,
+					title: 'Remote login URL (optional)',
+					text: 'By default, Prony uses its own authentication. If a user is not logged in, we\'ll ask them to create a Prony account. If you want to disable this, and only use accounts from your app, set your SSO remote login URL here.'
+				},
+				{
+					step: 2,
+					title: 'Remote login URL (optional)',
+					text: 'Redirect SSO users to a specific URL after they log out.'
+				},
+			]
+		}
 	},
 	domain: {
 		title: 'Custom domain'

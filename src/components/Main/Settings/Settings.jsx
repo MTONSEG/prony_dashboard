@@ -1,9 +1,10 @@
 import React from 'react';
+import './Settings.scss';
 import { Route, Routes } from 'react-router-dom';
 import AppearanceSettings from './AppearanceSettings/AppearanceSettings';
 import EmailSettings from './EmailSettings/EmailSettings';
 import GeneralSettings from './GeneralSettings /GeneralSettings ';
-import './Settings.scss';
+import SsoSettings from './SsoSettings/SsoSettings';
 
 const Settings = props => {
 	return (
@@ -17,9 +18,9 @@ const Settings = props => {
 			<Route path='/email' element={
 				<EmailSettings />
 			} />
-			{/* <Route path='/sso' element={
+			<Route path='/sso' element={
 				<SsoSettings />
-			} /> */}
+			} />
 			{/* <Route path='/domain' element={
 				<DomainSettings />
 			} /> */}

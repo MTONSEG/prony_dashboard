@@ -1,0 +1,65 @@
+.settings-sso {
+	&__title {
+		margin: 0 0 22px;
+	}
+	&__container {
+		background: #FFFFFF;
+		box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
+		border-radius: 10px;
+		max-width: 1285px;
+		padding: 0 0 43px;
+	}
+	&__header,
+	&__body {
+		display: flex;
+
+	}
+	&__header {
+		padding: 22px 47px;
+		border-bottom: 1px solid #E0E0E0;
+	}
+
+	&__body{
+		padding: 32px 47px 0;
+		margin: 0 0 54px;
+	}
+
+	&__btn-wrap {
+		padding: 0 44px;
+	}
+	&__header-title {
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.09px;
+		color: #272557;
+	}
+	&__header-title,
+	&__body-block {
+		width: 100%;
+		&.redirect {
+			flex: 0 0 470px;
+		}
+	}
+	&__step {
+		display: flex;
+		gap: 4px;
+		padding: 0 0 0 37px;
+		position: relative;
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.05px;
+		color: #272557;
+		margin: 23px 0 6px;
+		&-link {
+			color: #1565C0;
+			text-decoration: underline;
+		}
+	}
+	&__icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 22px;
+		height: 22px;
+	}
+}
