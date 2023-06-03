@@ -10,6 +10,7 @@ import TextareaForm from '../../../UI/Forms/TextareaForm/TextareaForm';
 import UploadBlock from '../../Posts/CreatePost/UploadBlock/UploadBlock';
 import SelectPostForm from '../../../UI/Forms/SelectPostForm/SelectPostForm';
 import TagItem from '../../Posts/MainPosts/FilterPosts/TagItem/TagItem';
+import { DatePicker } from 'rsuite';
 
 const AddRecordChangelog = ({ edit }) => {
 	const [state, setState] = useState(addRecord);
@@ -17,6 +18,10 @@ const AddRecordChangelog = ({ edit }) => {
 	const [detailValue, setDetailValue] = useState('');
 	const [drag, setDrag] = useState(false);
 
+	const datePeckerStyles = {
+		margin: '0 0 13px',
+		width: '283px'
+	}
 
 	return (
 		<div className='add-changelog'>
@@ -43,6 +48,12 @@ const AddRecordChangelog = ({ edit }) => {
 					drag={drag}
 					setDrag={setDrag}
 				/>
+				<p className="add-changelog__label-title input-title">
+					Publish time
+				</p>
+
+				<DatePicker size="lg" style={datePeckerStyles} placement="rightEnd" />
+
 				<div className='add-changelog__form-item'>
 					<p className="add-changelog__label-title input-title">
 						{state.labels.title}

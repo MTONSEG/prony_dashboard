@@ -1,3 +1,5 @@
+@import '../../../../../node_modules/rsuite/dist/rsuite';
+
 .add-changelog {
 	&__title {
 		margin: 0 0 22px;
@@ -21,5 +23,15 @@
 		display: flex;
 		gap: 15px;
 		margin: 13px 0 53px;
+	}
+
+	& .rs-picker-toggle-placeholder {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #9E9E9E;
+		font-size: 14px;
+	}
+	& .rs-picker-has-value .rs-btn .rs-picker-toggle-value, .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+		color: #000;
 	}
 }
